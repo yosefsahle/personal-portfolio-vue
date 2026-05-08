@@ -1,5 +1,12 @@
 <template>
-  <header class="w-full bg-white relative py-5">
+  <header
+  :class="[
+    'w-full sticky top-0 transition-all duration-300 px-5 md:px-30',
+    isScrolled 
+      ? 'bg-white shadow-md py-3 z-50' 
+      : 'bg-white py-5'
+  ]"
+>
     <div class="container mx-auto flex items-center justify-between">
 
       <!-- Logo -->
@@ -68,8 +75,8 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { useRoute } from "vue-router";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const route = useRoute();
 
@@ -91,4 +98,18 @@ const toggleMenu = () => {
 const closeMenu = () => {
   open.value = false;
 };
+
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 20;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
