@@ -45,8 +45,8 @@ src/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/yosefsahle/personal-portfolio-vue.git
+cd personal-portfolio-vue
 ```
 
 ### 2. Install dependencies
@@ -92,9 +92,9 @@ You can easily customize:
 
 If you’d like to connect or collaborate:
 
-* 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-* 💼 LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-* 🐙 GitHub: [https://github.com/your-username](https://github.com/your-username)
+* 📧 Email: [yosefsahle48@gmail.com](mailto:yosefsahle48@gmail.com)
+* 💼 LinkedIn: [https://www.linkedin.com/in/yosef-sahle/](https://www.linkedin.com/in/yosef-sahle/)
+* 🐙 GitHub: [https://github.com/yosefsahle](https://github.com/yosefsahle)
 
 
 ## 📄 License
