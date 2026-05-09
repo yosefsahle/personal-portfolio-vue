@@ -97,20 +97,15 @@
             </div>
         </div>
     </div>
-    <div class="w-full mt-30 flex justify-between items-center ">
-        <div class="z-2 w-full md:w-1/3 flex flex-col justify-between gap-5 items-center md:items-start">
-            <p class="text-[#0DB760] border  rounded-[50%_/_50%] w-22 font-bold center text-center">Portfolio</p>
-            <p class="text-3xl font-bold">
-                My Creative Works Latest <span class="text-[#0DB760]">Projects</span>
-            </p>
-            <p class="text-sm">I have selected and mentioned here some of my latest projects to share with you.</p>
-            <div class="flex gap-5">
-                <button class="bg-[#0DB760] px-8 py-4 rounded-lg text-white font-semibold">Show More</button>
-                
-            </div>
-        </div>
+    
+
+        <homeProjects />
         
-    </div>
+    
 
     <div class="mt-15"></div>
 </template>
+
+<script setup>
+import homeProjects from '../components/common/homeProjects.vue';
+</script>
