@@ -72,8 +72,8 @@ const scrollRight = () => {
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
-                        <p class="font-bold text-sm">Yosef Sahle</p>
-                        <p class="text-xs text-gray-500">CEO, Company</p>
+                        <p class="font-bold text-sm">Absalat Niguse</p>
+                        <p class="text-xs text-gray-500">Marketing Manager, Company</p>
                     </div>
                 </div>
             </div>
@@ -89,8 +89,8 @@ const scrollRight = () => {
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
-                        <p class="font-bold text-sm">Yosef Sahle</p>
-                        <p class="text-xs text-gray-500">CEO, Company</p>
+                        <p class="font-bold text-sm">Abigel Amare</p>
+                        <p class="text-xs text-gray-500">CTO, Company</p>
                     </div>
                 </div>
             </div>
@@ -106,8 +106,8 @@ const scrollRight = () => {
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
-                        <p class="font-bold text-sm">Yosef Sahle</p>
-                        <p class="text-xs text-gray-500">CEO, Company</p>
+                        <p class="font-bold text-sm">Dawit Berihun</p>
+                        <p class="text-xs text-gray-500">Sales Director, Company</p>
                     </div>
                 </div>
             </div>
