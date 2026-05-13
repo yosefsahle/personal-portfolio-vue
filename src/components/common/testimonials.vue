@@ -51,7 +51,7 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
@@ -68,7 +68,7 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
@@ -85,7 +85,7 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
@@ -102,7 +102,7 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>

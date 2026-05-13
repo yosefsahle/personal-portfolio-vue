@@ -1,7 +1,7 @@
 <template>
   <header
   :class="[
-    'w-full sticky top-0 transition-all duration-300 px-5 md:px-30',
+    'w-full sticky top-0 transition-all duration-300 px-5 md:px-20',
     isScrolled 
       ? 'bg-white shadow-md py-3 z-50' 
       : 'bg-white py-5'
