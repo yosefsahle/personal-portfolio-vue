@@ -60,7 +60,7 @@ const scrollRight = () => {
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 w-100 min-w-[420px] bg-white p-5 rounded-lg">
+            <div class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] bg-white p-5 rounded-lg">
                 <div>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
@@ -77,7 +77,7 @@ const scrollRight = () => {
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 w-100 min-w-[420px] bg-white p-5 rounded-lg">
+            <div class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] bg-white p-5 rounded-lg">
                 <div>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
@@ -94,7 +94,7 @@ const scrollRight = () => {
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 w-100 min-w-[420px] bg-white p-5 rounded-lg">
+            <div class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] bg-white p-5 rounded-lg">
                 <div>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>

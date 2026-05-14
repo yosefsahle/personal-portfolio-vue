@@ -14,28 +14,28 @@
         </div>
         
         <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full">
-            <div class="top-30 left-20 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm"></div>
-            <div class="top-50 left-20 absolute w-[30px] h-[30px] bg-[#F4C430] rounded-[100%] blur-sm"></div>
-            <!-- <div class="top-20 left-30 absolute w-[30px] h-[30px] bg-[#E63946] rounded-[100%] blur-sm"></div>
-            <div class="top-10 left-50 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm"></div> -->
-            <div class="top-80 left-40 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div>
-            <div class="top-30 left-60 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div>
+            <div class="top-30 left-20 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm float-1"></div>
+            <div class="top-50 left-20 absolute w-[30px] h-[30px] bg-[#F4C430] rounded-[100%] blur-sm float-2"></div>
+            <div class="top-20 left-30 absolute w-[30px] h-[30px] bg-[#E63946] rounded-[100%] blur-sm float-4"></div>
+            <!-- <div class="top-10 left-50 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm"></div> -->
+            <div class="top-80 left-40 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm float-4"></div>
+            <div class="top-30 left-60 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm float-1"></div>
             
-            <!-- <div class="top-5 left-90 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div>
-            <div class="top-60 left-50 absolute w-[30px] h-[30px] bg-[#F4C430] rounded-[100%] blur-sm"></div>
-            <div class="top-40 left-10 absolute w-[30px] h-[30px] bg-[#E63946] rounded-[100%] blur-sm"></div>
-            <div class="top-20 left-90 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm"></div> -->
-            <div class="top-10 left-10 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div>
-            <div class="top-90 left-80 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div>
+            <!-- <div class="top-5 left-90 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div> -->
+            <div class="top-60 left-50 absolute w-[30px] h-[30px] bg-[#F4C430] rounded-[100%] blur-sm float-2"></div>
+            <div class="top-40 left-10 absolute w-[30px] h-[30px] bg-[#E63946] rounded-[100%] blur-sm float-3"></div>
+            <div class="top-20 left-90 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm float-4"></div>
+            <!-- <div class="top-10 left-10 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div> -->
+            <div class="top-90 left-80 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm float-1"></div>
 
 
-            <div class="top-30 right-20 absolute w-[100px] h-[100px] bg-[#F4C430] rounded-full blur-sm float-1"></div>
-            <div class="top-40 right-80 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm float-2"></div>
-            <div class="top-20 right-60 absolute w-[100px] h-[100px] bg-[#3A86FF] rounded-full blur-sm float-3"></div>
-            <div class="top-50 right-10 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm float-4"></div>
-            <div class="top-35 right-22 absolute w-[300px] h-[300px] bg-[#F4C430] rounded-full blur-lg float-1"></div>
-            <div class="top-90 right-70 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm float-2"></div>
-            <div class="top-85 right-20 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm float-3"></div>
+            <div class="md:top-30 top-80 md:right-20 right-8 absolute w-[100px] h-[100px] bg-[#F4C430] rounded-full blur-sm float-1"></div>
+            <div class="md:top-40 top-90 md:right-80 right-70 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm float-2"></div>
+            <div class="md:top-20 top-70 md:right-60 right-45 absolute w-[100px] h-[100px] bg-[#3A86FF] rounded-full blur-sm float-3"></div>
+            <div class="md:top-50 top-100 md:right-10 right-0 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm float-4"></div>
+            <div class="md:top-35 top-85 md:right-22 right-10 absolute w-[300px] h-[300px] bg-[#F4C430] rounded-full blur-lg float-1"></div>
+            <div class="md:top-90 top-140 md:right-70 right-60 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm float-2"></div>
+            <div class="md:top-85 top-140 md:right-20 right-8 absolute w-[100px] h-[10０px] bg-[#E63946] rounded-full blur-sm float-3"></div>
         </div>
 
     </div>
