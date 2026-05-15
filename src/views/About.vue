@@ -10,7 +10,7 @@
         </div>
         <div class="z-1 w-full  flex justify-center items-center animate-item-side delay-4">
              
-               <img src="../assets/yosefanimation-white.png" alt="" class="md:w-100 md:h-100">
+               <img src="../assets/yosefanimation-white.png" alt="" class="md:w-108 md:h-108">
         </div>
         
         <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full">
@@ -37,7 +37,23 @@
             <div class="md:top-90 top-140 md:right-70 right-60 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm float-2"></div>
             <div class="md:top-85 top-140 md:right-20 right-8 absolute w-[100px] h-[10０px] bg-[#E63946] rounded-full blur-sm float-3"></div>
         </div>
-
+        
     </div>
+    <AboutSkills/>
 
+    <!-- <div>
+            <div class="flex flex-wrap gap-5 mt-5">
+                <CircularProgress percentage="90" skill="JavaScript"/>
+                <CircularProgress percentage="85" skill="Vue.js"/>
+                <CircularProgress percentage="80" skill="HTML & CSS"/>
+                <CircularProgress percentage="75" skill="Node.js"/>
+                <CircularProgress percentage="70" skill="Python"/>
+                <CircularProgress percentage="65" skill="Graphic Design"/>
+            </div>
+        </div> -->
+    
 </template>
+<script setup>
+import CircularProgress from '../components/reusables/CircularProgress.vue';
+import AboutSkills from '../components/common/about-skills.vue';
+</script>
