@@ -14,30 +14,32 @@
         <div class="z-1 w-full md:w-1/2 flex justify-center items-center gap-10">
             <div class="flex flex-col w-full gap-10">
                 <div>
-                    <i class="fa-regular fa-gem text-[#0DB760] text-2xl"></i>
+                    <i class="fa-solid fa-palette text-[#0DB760] text-2xl"></i>
                     <p class="text-md font-bold">UI/UX Design</p>
-                    <p class="text-xs font-extralight">Create user interface design with unique & modern ideas</p>
+                    <p class="text-xs font-extralight">Designing user-friendly and visually appealing interfaces, focusing on user experience, layout, colors, and usability.</p>
                 </div>
+                
                 <div>
-                    <i class="fa-solid fa-graduation-cap text-[#0DB760] text-2xl"></i>
-                    <p class="text-md font-bold">UX Research</p>
-                    <p class="text-xs font-extralight">Create digital user products with updated ideas</p>
+                    
+                    <i class="fa-solid fa-mobile-screen-button text-[#0DB760] text-2xl"></i>
+                    <p class="text-md font-bold">Mobile App Development</p>
+                    <p class="text-xs font-extralight">Creating cross-platform mobile applications with smooth performance, intuitive design, and practical real-world use cases.</p>
                 </div>
                 
             </div>
             <div class="flex flex-col w-full gap-10">
                 <div>
-                    <i class="fa-brands fa-figma text-[#0DB760] text-2xl"></i>
-                    <p class="text-md font-bold">UI/UX Design</p>
-                    <p class="text-xs font-extralight">Create user interface design with unique & modern ideas</p>
+                    <i class="fa-solid fa-code text-[#0DB760] text-2xl"></i>
+                    <p class="text-md font-bold">Web Development</p>
+                    <p class="text-xs font-extralight">Building responsive and dynamic websites, including business websites and full-featured platforms with real-world functionality.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-palette text-[#0DB760] text-2xl"></i>
-                    <p class="text-md font-bold">UX Research</p>
-                    <p class="text-xs font-extralight">Create digital user products with updated ideas</p>
+                    <i class="fa-solid fa-server text-[#0DB760] text-2xl"></i>
+                    <p class="text-md font-bold">Backend Development</p>
+                    <p class="text-xs font-extralight">Creating and managing the server, database, and application logic that powers the frontend and handles data processing.</p>
                 </div>
-                
             </div>
         </div>
+        
     </div>
 </template>
