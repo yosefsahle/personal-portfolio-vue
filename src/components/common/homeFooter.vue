@@ -34,7 +34,7 @@
                     </div>
                     <div class="flex flex-col gap-1">
                         <p class="text-sm text-gray-400">Address</p>
-                        <p class="text-sm">+251 91 297 8713</p>
+                        <p class="text-sm">Addis Ababa, Ethiopia</p>
                     </div>
                 </div>
             </div>

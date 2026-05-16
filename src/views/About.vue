@@ -35,10 +35,11 @@
             <div class="md:top-50 top-100 md:right-10 right-0 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm float-4"></div>
             <div class="md:top-35 top-85 md:right-22 right-10 absolute w-[300px] h-[300px] bg-[#F4C430] rounded-full blur-lg float-1"></div>
             <div class="md:top-90 top-140 md:right-70 right-60 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm float-2"></div>
-            <div class="md:top-85 top-140 md:right-20 right-8 absolute w-[100px] h-[10０px] bg-[#E63946] rounded-full blur-sm float-3"></div>
+            <div class="md:top-85 top-140 md:right-20 right-8 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm float-3"></div>
         </div>
         
     </div>
+    <AboutEducation/>
     <AboutSkills/>
 
     <!-- <div>
@@ -56,4 +57,5 @@
 <script setup>
 import CircularProgress from '../components/reusables/CircularProgress.vue';
 import AboutSkills from '../components/common/about-skills.vue';
+import AboutEducation from '../components/common/aboutEducation.vue';
 </script>
