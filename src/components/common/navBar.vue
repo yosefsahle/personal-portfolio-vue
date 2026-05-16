@@ -29,7 +29,7 @@
 
       <!-- CTA (Desktop) -->
       <button
-        class="hidden md:block px-5 py-2 rounded-lg border-2 border-[#0DB760] text-[#0DB760] font-semibold hover:bg-[#0DB760] hover:text-white transition"
+        class="hidden md:block px-5 py-2 rounded-lg border-2 border-[#0DB760] text-[#0DB760] font-semibold hover:bg-[#0DB760] hover:text-white transition cursor-pointer"
       >
         Download CV
       </button>

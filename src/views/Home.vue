@@ -51,6 +51,7 @@
     <homeCounter />
         <homeSkill />
         <homeProjects />
+        <homeTools />
         <testimonials />
         <homeFooter />  
 
@@ -63,4 +64,5 @@ import testimonials from '../components/common/testimonials.vue';
 import homeSkill from '../components/common/homeSkill.vue';
 import homeCounter from '../components/common/homeCounter.vue';
 import homeFooter from '../components/common/homeFooter.vue';
+import homeTools from '../components/common/homeTools.vue';
 </script>
