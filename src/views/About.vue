@@ -8,7 +8,7 @@
             <p class="text-sm md:text-md animate-item delay-3">I am a Software Engineer and Graphic Designer dedicated to the intersection of logic and aesthetics. A proud graduate of Addis Ababa University, I combine the structural discipline of engineering with a deep-seated passion for visual storytelling. Whether I’m writing clean, scalable code or crafting a brand identity from scratch, my goal is always to create seamless digital experiences</p>
             
         </div>
-        <div class="z-1 w-full  flex justify-center items-center animate-item-side delay-4">
+        <div class="z-1 w-full  flex justify-center items-center animate-item-side delay-1">
              
                <img src="../assets/yosefanimation-white.png" alt="" class="md:w-108 md:h-108">
         </div>
@@ -41,6 +41,12 @@
     </div>
     <AboutEducation/>
     <AboutSkills/>
+    <div class="flex flex-col md:flex-row gap-10 items-center justify-around mb-20">
+        <img src="https://streak-stats.demolab.com?user=yosefsahle" />
+        <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&title=Stars,Followers,Commits,MultiLanguage,Repositories,PullRequest,Experience,Followers,Issues&column=5&margin-w=10&&margin-h=5" alt="" class="hidden md:block">
+        <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&title=Stars,Followers,Commits,MultiLanguage,Repositories,PullRequest,Experience,Followers,Issues&column=4&margin-w=10&&margin-h=5" alt="" class="md:hidden">
+        <!-- <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&theme=radical&no-frame=true&no-bg=false&margin-w=5&column=4" alt=""> -->
+    </div>
 
     <!-- <div>
             <div class="flex flex-wrap gap-5 mt-5">

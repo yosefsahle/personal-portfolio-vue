@@ -11,6 +11,12 @@
   100% { transform: translateY(0px) translateX(0px); }
 }
 
+@keyframes floatrev {
+  0%   { transform: translateY(0px) translateX(0px); }
+  50%  { transform: translateY(-20px) translateX(-10px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
 @keyframes floatimg {
   0%   { transform: translateY(0px) translateX(0px); }
   50%  { transform: translateY(-10px) translateX(5px); }
@@ -35,4 +41,20 @@
 
 .float-4 {
   animation: float 9s ease-in-out infinite;
+}
+
+.float-5 {
+  animation: floatrev 6s ease-in-out infinite;
+}
+
+.float-6 {
+  animation: floatrev 8s ease-in-out infinite;
+}
+
+.float-7 {
+  animation: floatrev 7s ease-in-out infinite;
+}
+
+.float-8 {
+  animation: floatrev 9s ease-in-out infinite;
 }
