@@ -89,5 +89,10 @@
             <div class="md:top-85 top-140 md:left-20 right-8 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm"></div>
         </div>
         
+        
     </div>
+    <myProjects />
 </template>
+<script setup>
+import myProjects from '../components/common/myProjects.vue';
+</script>
