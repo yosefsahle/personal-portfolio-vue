@@ -8,9 +8,8 @@
             <p class="text-sm md:text-md animate-item delay-3">I am a Software Engineer and Graphic Designer dedicated to the intersection of logic and aesthetics. A proud graduate of Addis Ababa University, I combine the structural discipline of engineering with a deep-seated passion for visual storytelling. Whether I’m writing clean, scalable code or crafting a brand identity from scratch, my goal is always to create seamless digital experiences</p>
             
         </div>
-        <div class="z-1 w-full  flex justify-center items-center animate-item-side delay-1">
-             
-               <img src="../assets/yosefanimation-white.png" alt="" class="md:w-108 md:h-108">
+        <div class="z-1 w-full flex justify-center items-center animate-item-side delay-1">
+            <img :src="imageSrc" alt="" class="md:w-108 md:h-108">
         </div>
         
         <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full">
@@ -61,7 +60,17 @@
     
 </template>
 <script setup>
+import { computed } from 'vue';
 import CircularProgress from '../components/reusables/CircularProgress.vue';
 import AboutSkills from '../components/common/about-skills.vue';
 import AboutEducation from '../components/common/aboutEducation.vue';
+import { useTheme } from '../composables/useTheme';
+
+const {lighMode} = useTheme();
+
+const imageSrc = computed(() => 
+  lighMode.value
+    ? new URL('../assets/yosefanimation-white.png', import.meta.url).href
+    : new URL('../assets/yosefanimation-black.png', import.meta.url).href
+);
 </script>

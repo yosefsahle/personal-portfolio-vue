@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-20 flex flex-col gap-5">
+    <div :class="lighMode?'bg-white':'bg-black'" class="mt-20 flex flex-col gap-5">
         <div class="z-2 w-full flex flex-col justify-between gap-3 items-center">
             <p class="text-[#0DB760] border  rounded-[50%_/_50%] w-22 font-bold center text-center">Contact</p>
             <p class="text-3xl font-bold">
@@ -55,3 +55,8 @@
         </div>
     </div>
 </template>
+<script setup>
+import { useTheme } from '../../composables/useTheme';
+
+const { lighMode } = useTheme();
+</script>
