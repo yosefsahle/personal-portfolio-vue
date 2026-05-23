@@ -16,65 +16,23 @@
             <div class="top-20 left-90 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm"></div>
             <!-- <div class="top-10 left-10 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div> -->
             <div class="top-90 left-80 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div>
-            <div class="z-2 top-90 right-80 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-1 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=html" class="w-8" />
-                Html
-            </div>
-            <div class="z-2 top-20 left-20 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-2 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=flutter" class="w-8" />
-                Flutter
-            </div>
-            <div class="z-2 top-40 right-20 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-3 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=next" class="w-8" />
-                Nextjs
-            </div>
-            <div class="z-2 top-50 left-80 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-4 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=vue" class="w-8" />
-                Vue.js
-            </div>
-            <div class="z-2 top-85 left-60 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-5 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=photoshop" class="w-8" />
-                Photoshop
-            </div>
-            <div class="z-2 top-80 left-0 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-6 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=react" class="w-8" />
-                React
-            </div>
-            <div class="z-2 top-30 right-80 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-7 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=angular" class="w-8" />
-                Angular
-            </div>
-            <div class="z-2 top-10 right-20 absolute bg-white rounded-md px-2 py-2 gap-5 shadow-lg float-8 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=illustrator" class="w-8" />
-                Illustrator
-            </div>
-            <div class="z-2 top-10 right-120 absolute bg-white rounded-md p-2 gap-5 shadow-lg float-1 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=illustrator" class="w-8" />
-            </div>
-            <div class="z-1 top-60 right-90 absolute bg-white rounded-md p-2 gap-5 shadow-lg float-1 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=illustrator" class="w-8" />
-            </div>
-            <div class="z-2 top-80 right-130 absolute bg-white rounded-md p-2 gap-5 shadow-lg float-1 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=figma" class="w-8" />
-            </div>
-            <div class="z-2 top-80 right-60 absolute bg-white rounded-md p-2 gap-5 shadow-lg float-1 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=illustrator" class="w-8" />
-            </div>
-            <div class="z-2 top-10 right-120 absolute bg-white rounded-md p-2 gap-5 shadow-lg float-1 flex items-center ">
-                <img src="https://skillicons.dev/icons?i=illustrator" class="w-8" />
+            <div v-for="(skill, index) in skills" :key="index" :class="[ skill.z || 'z-2', skill.position,lightMode?'bg-white':'bg-[#0DB760]/50', 'absolute rounded-md shadow-lg flex items-center gap-5', skill.name ? 'px-2 py-2' : 'p-2', skill.float]">
+                <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" class="w-8"/>
+                <!-- Show text only if exists -->
+                 <span v-if="skill.name">{{ skill.name }}</span>
             </div>
             <div class="z-1 rotate-270 md:rotate-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-2 flex items-center w-full items-center justify-center">
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">M</p>
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">Y</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">&ensp;</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">P</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">R</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">O</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">J</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">E</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">C</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">T</p>
-                <p class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">S</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">&ensp;</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">P</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">R</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">O</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">J</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">E</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">C</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">T</p>
+                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">S</p>
 
             </div>
 
@@ -95,4 +53,24 @@
 </template>
 <script setup>
 import myProjects from '../components/common/myProjects.vue';
+import { useTheme } from '../composables/useTheme';
+
+const {lightMode} = useTheme();
+
+const skills = [
+  { name: "Html", icon: "html", position: "top-90 right-80", float: "float-1" },
+  { name: "Flutter", icon: "flutter", position: "top-20 left-20", float: "float-2" },
+  { name: "Nextjs", icon: "next", position: "top-40 right-20", float: "float-3" },
+  { name: "Vue.js", icon: "vue", position: "top-50 left-80", float: "float-4" },
+  { name: "Photoshop", icon: "photoshop", position: "top-85 left-60", float: "float-5" },
+  { name: "React", icon: "react", position: "top-80 left-0", float: "float-6" },
+  { name: "Angular", icon: "angular", position: "top-30 right-80", float: "float-7" },
+  { name: "Illustrator", icon: "illustrator", position: "top-10 right-20", float: "float-8" },
+
+  // icon-only ones
+  { icon: "illustrator", position: "top-10 right-120", float: "float-1" },
+  { icon: "illustrator", position: "top-60 right-90", float: "float-1", z: "z-1" },
+  { icon: "figma", position: "top-80 right-130", float: "float-1" },
+  { icon: "illustrator", position: "top-80 right-60", float: "float-1" },
+];
 </script>

@@ -17,7 +17,7 @@
         </div>
         <div class="z-1 w-full  flex justify-center items-center animate-item-side delay-3 ">
              
-               <img src="../assets/portmainsharp.png" alt="" class="md:w-100 md:h-100 float-1 mt-10 md:mt-0">
+               <img :src="imageSrc" alt="" class="md:w-100 md:h-100 float-1 mt-10 md:mt-0">
         </div>
         <div class="flex flex-row md:flex-col justify-between items-center w-full md:w-0 md:h-80 animate-item delay-4">
             <p class="hidden md:block h-[120px] text-md font-thin text-[#0DB760] md:[writing-mode:vertical-rl] [text-orientation:mixed] ">Follow Me On</p>
@@ -59,10 +59,20 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
 import homeProjects from '../components/common/homeProjects.vue';
 import testimonials from '../components/common/testimonials.vue';
 import homeSkill from '../components/common/homeSkill.vue';
 import homeCounter from '../components/common/homeCounter.vue';
 import homeFooter from '../components/common/homeFooter.vue';
 import homeTools from '../components/common/homeTools.vue';
+import { useTheme } from '../composables/useTheme';
+
+const {lighMode} = useTheme();
+
+const imageSrc = computed(() => 
+  lighMode.value
+    ? new URL('../assets/portmainsharp.png', import.meta.url).href
+    : new URL('../assets/portmain-dark.png', import.meta.url).href
+);
 </script>
