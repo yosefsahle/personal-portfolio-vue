@@ -1,6 +1,9 @@
 <script setup>
 import { ref,computed } from 'vue'
+import { useTheme } from '../../composables/useTheme';
+
 const activeFilter = ref("all");
+const {lighMode} = useTheme();
 
 const scrollContainer = ref(null)
 
@@ -70,14 +73,14 @@ const setFilter = (filter) => {
         Tools
       </p>
 
-      <p class="text-3xl font-bold">
+      <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-3xl font-bold">
         Tools I Use to  
         <span class="text-[#0DB760]">Build</span>
       </p>
       </div>
       <div class="w-full md:w-2/3 flex flex-row gap-5 items-end justify-between md:justify-end md:pr-20">
-        <i class="fa-solid fa-arrow-left-long cursor-pointer text-xl" @click="scrollLeft"></i>
-        <i class="fa-solid fa-arrow-right-long cursor-pointer text-xl" @click="scrollRight"></i>
+        <i :class="lighMode ? 'text-black':'text-gray-400'" class="fa-solid fa-arrow-left-long cursor-pointer text-xl" @click="scrollLeft"></i>
+        <i :class="lighMode ? 'text-black':'text-gray-400'" class="fa-solid fa-arrow-right-long cursor-pointer text-xl" @click="scrollRight"></i>
       </div>
     </div>
 
@@ -91,10 +94,10 @@ const setFilter = (filter) => {
          
          <div ref="scrollContainer" class="flex overflow-x-auto no-scrollbar scroll-smooth gap-5 py-5">
             <div v-for="(skill, index) in filteredSkills" :key="index" class="w-100 min-w-[150px] md:min-w-[150px] h-40 rounded-lg shadow-lg shadow-gray-300 hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
-                <div class="h-2/3 bg-gray-100 rounded-t-lg flex items-center justify-center">
+                <div :class="lighMode ? 'bg-gray-100':'bg-gray-600'" class="h-2/3 rounded-t-lg flex items-center justify-center">
                     <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" />
                 </div>
-                <div class="p-3 bg-white rounded-b-lg">
+                <div :class="lighMode ? 'bg-white':'bg-gray-200'" class="p-3 rounded-b-lg">
                     <p class="text-sm">{{ skill.name }}</p>
                     <p class="text-xs text-gray-400">{{ skill.type }}</p>
                 </div>
