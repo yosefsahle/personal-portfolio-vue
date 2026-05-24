@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from 'vue'
+import { useTheme } from '../../composables/useTheme'
 
 const scrollContainer = ref(null)
+const {lighMode} = useTheme();
 
 // 👉 Scroll functions
 const scrollLeft = () => {
@@ -22,16 +24,16 @@ const scrollRight = () => {
         Portfolio
       </p>
 
-      <p class="text-3xl font-bold">
+      <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-3xl font-bold">
         My Creative Works Latest 
         <span class="text-[#0DB760]">Projects</span>
       </p>
 
-      <p class="text-sm">
+      <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm">
         I have selected some of my latest projects.
       </p>
 
-      <button class="bg-[#0DB760] w-full md:w-auto px-8 py-4 rounded-lg text-white font-semibold">
+      <button :class="lighMode ? 'text-white':'text-black'" class="bg-[#0DB760] w-full md:w-auto px-8 py-4 rounded-lg font-semibold">
         Show More
       </button>
     </div>

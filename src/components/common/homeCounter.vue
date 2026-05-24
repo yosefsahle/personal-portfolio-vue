@@ -5,10 +5,10 @@
   >
     
     <div class="flex flex-col gap-3 items-start animate-item delay-1">
-      <p class="text-2xl md:text-5xl font-bold text-[#0DB760]">
+      <p  class="text-2xl md:text-5xl font-bold text-[#0DB760]">
         {{ clients }}+
       </p>
-      <p class="text-sm md:text-2xl">Satisfied clients</p>
+      <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm md:text-2xl">Satisfied clients</p>
     </div>
 
     <div class="w-[1px] h-20 bg-[#0DB760]"></div>
@@ -17,7 +17,7 @@
       <p class="text-2xl md:text-5xl font-bold text-[#0DB760]">
         {{ projects }}+
       </p>
-      <p class="text-sm md:text-2xl">Projects completed</p>
+      <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm md:text-2xl">Projects completed</p>
     </div>
 
     <div class="w-[1px] h-20 bg-[#0DB760]"></div>
@@ -26,7 +26,7 @@
       <p class="text-2xl md:text-5xl font-bold text-[#0DB760]">
         {{ reviews }}+
       </p>
-      <p class="text-sm md:text-2xl">Reviews given</p>
+      <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm md:text-2xl">Reviews given</p>
     </div>
 
   </div>
@@ -34,8 +34,10 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useTheme } from '../../composables/useTheme'
 
 const sectionRef = ref(null)
+const {lighMode} = useTheme();
 
 const clients = ref(0)
 const projects = ref(0)
