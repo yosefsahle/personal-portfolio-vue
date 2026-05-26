@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { useTheme } from '../../composables/useTheme'
 
+const {lighMode} = useTheme();
 const scrollContainer = ref(null)
 
 // 👉 Scroll functions
@@ -23,14 +25,14 @@ const scrollRight = () => {
         Reviews
       </p>
 
-      <p class="text-3xl font-bold">
+      <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-3xl font-bold">
         Our Customer Say Something  
         <span class="text-[#0DB760]">About Us</span>
       </p>
       </div>
       <div class="w-2/3 hidden md:flex flex-row gap-5 items-end justify-end md:pr-20">
-        <i class="fa-solid fa-arrow-left-long cursor-pointer text-xl" @click="scrollLeft"ss></i>
-        <i class="fa-solid fa-arrow-right-long cursor-pointer text-xl" @click="scrollRight"></i>
+        <i :class="lighMode ? 'text-black':'text-gray-400'" class="fa-solid fa-arrow-left-long cursor-pointer text-xl" @click="scrollLeft"ss></i>
+        <i :class="lighMode ? 'text-black':'text-gray-400'" class="fa-solid fa-arrow-right-long cursor-pointer text-xl" @click="scrollRight"></i>
       </div>
     </div>
 
@@ -42,8 +44,8 @@ const scrollRight = () => {
        <div class="flex flex-col justify-between w-full">
         <!-- 🟢 TOP: NEXT IMAGES -->
          
-         <div ref="scrollContainer" class="flex overflow-x-auto no-scrollbar scroll-smooth">
-            <div class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] bg-white p-5 rounded-lg">
+         <div ref="scrollContainer" class="flex overflow-x-auto no-scrollbar scroll-smooth gap-2">
+            <div :class="lighMode ? 'bg-white':'bg-gray-600'" class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] p-5 rounded-lg">
                 <div>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
@@ -51,16 +53,16 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
                         <p class="font-bold text-xs">Yosef Sahle</p>
-                        <p class="text-xs text-gray-500">CEO, Company</p>
+                        <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">CEO, Company</p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] bg-white p-5 rounded-lg">
+            <div :class="lighMode ? 'bg-white':'bg-gray-600'" class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] p-5 rounded-lg">
                 <div>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
@@ -68,16 +70,16 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
                         <p class="font-bold text-sm">Absalat Niguse</p>
-                        <p class="text-xs text-gray-500">Marketing Manager, Company</p>
+                        <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">Marketing Manager, Company</p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] bg-white p-5 rounded-lg">
+            <div :class="lighMode ? 'bg-white':'bg-gray-600'" class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] p-5 rounded-lg">
                 <div>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
@@ -85,16 +87,16 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
                         <p class="font-bold text-sm">Abigel Amare</p>
-                        <p class="text-xs text-gray-500">CTO, Company</p>
+                        <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">CTO, Company</p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] bg-white p-5 rounded-lg">
+            <div :class="lighMode ? 'bg-white':'bg-gray-600'" class="flex flex-col gap-3 w-100 min-w-[250px] md:min-w-[420px] p-5 rounded-lg">
                 <div>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
@@ -102,12 +104,12 @@ const scrollRight = () => {
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                     <i class="fa-solid fa-star text-[#FFD700] text-xs"></i>
                 </div>
-                <p class="text-xs text-gray-500">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
+                <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company</p>
                 <div class="flex flex-row gap-3">
                     <img src="../../assets/yosef.png" alt="" class="h-10 rounded-full">
                     <div>
                         <p class="font-bold text-sm">Dawit Berihun</p>
-                        <p class="text-xs text-gray-500">Sales Director, Company</p>
+                        <p :class="lighMode ? 'text-gray-500':'text-gray-300'" class="text-xs">Sales Director, Company</p>
                     </div>
                 </div>
             </div>
