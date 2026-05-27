@@ -1,11 +1,11 @@
 <template>
     <div class="flex flex-col md:flex-row mt-5 items-center ">
         <div class="z-2 w-full flex flex-col justify-between gap-5 items-center md:items-start animate-container">
-            <p class="text-4xl md:text-5xl font-semibold animate-item delay-1">
+            <p :class="lighMode?'text-black':'text-gray-400'" class="text-4xl md:text-5xl font-semibold animate-item delay-1">
              A Little About <span class="font-bold text-[#0DB760]">ME</span>
             </p>
             <p class="text-sm text-[#0DB760] animate-item delay-2">💻 Software Engineer | 🎨 Graphic Designer | 🎓 AAU Alum</p>
-            <p class="text-sm md:text-md animate-item delay-3">I am a Software Engineer and Graphic Designer dedicated to the intersection of logic and aesthetics. A proud graduate of Addis Ababa University, I combine the structural discipline of engineering with a deep-seated passion for visual storytelling. Whether I’m writing clean, scalable code or crafting a brand identity from scratch, my goal is always to create seamless digital experiences</p>
+            <p :class="lighMode?'text-black':'text-gray-400'" class="text-sm md:text-md animate-item delay-3">I am a Software Engineer and Graphic Designer dedicated to the intersection of logic and aesthetics. A proud graduate of Addis Ababa University, I combine the structural discipline of engineering with a deep-seated passion for visual storytelling. Whether I’m writing clean, scalable code or crafting a brand identity from scratch, my goal is always to create seamless digital experiences</p>
             
         </div>
         <div class="z-1 w-full flex justify-center items-center animate-item-side delay-1">

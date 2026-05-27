@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full bg-white flex flex-col items-center gap-10 mt-20">
+  <div :class="lighMode?'bg-white':'bg-black'" class="w-full flex flex-col items-center gap-10 mt-20">
 
     <!-- Title -->
-    <p class="text-4xl font-bold">
+    <p :class="lighMode?'text-black':'text-gray-400'" class="text-4xl font-bold">
                 My  <span class="text-[#0DB760]">Education</span>
             </p>
 
@@ -10,7 +10,7 @@
     <div class="hidden md:block relative w-full max-w-6xl">
 
       <!-- Center Line -->
-      <div class="absolute top-1/2 left-0 w-full h-[2px] bg-gray-200"></div>
+      <div :class="lighMode?'bg-gray-200':'bg-gray-500'" class="absolute top-1/2 left-0 w-full h-[2px]"></div>
 
       <div class="flex justify-between items-center relative">
 
@@ -23,7 +23,7 @@
           <!-- TOP CARD -->
           <div
             v-if="index % 2 === 0"
-            class="cursor-pointer mb-10 bg-white shadow-xl rounded-2xl p-5 w-80 gap-5 flex text-center hover:scale-105 transition"
+            :class="lighMode?'bg-white':'bg-gray-600'" class="cursor-pointer mb-10 shadow-xl rounded-2xl p-5 w-80 gap-5 flex text-center hover:scale-105 transition"
           >
             <div>
                 <img :src="item.logo" :alt="item.school" class="w-15">
@@ -32,28 +32,28 @@
             <h3 class="text-sm font-semibold text-[#0DB760]">
               {{ item.title }}
             </h3>
-            <p class="text-sm text-gray-700 mt-1">
+            <p :class="lighMode?'text-gray-600':'text-gray-400'" class="text-sm mt-1">
               {{ item.school }}
             </p>
-            <p class="text-xs text-gray-400">
+            <p :class="lighMode?'text-gray-400':'text-gray-300'" class="text-xs">
               {{ item.field }}
             </p>
             </div>
           </div>
 
           <!-- LINE TO DOT -->
-          <div class="w-[2px] h-6 bg-gray-300"></div>
+          <div :class="lighMode?'bg-gray-300':'bg-gray-600'" class="w-[2px] h-6 bg-gray-300"></div>
 
           <!-- DOT -->
-          <div class="w-25 h-8 bg-[#0DB760] rounded-full shadow-lg border-4 border-white z-10 text-white text-xs items-center justify-center flex">{{ item.year }}</div>
+          <div :class="lighMode?'border-white text-white':'border-black text-black shadow-gray-600/20'" class="w-25 h-8 bg-[#0DB760] rounded-full shadow-lg border-4 z-10 text-xs items-center justify-center flex">{{ item.year }}</div>
 
           <!-- LINE DOWN -->
-          <div class="w-[2px] h-6 bg-gray-300"></div>
+          <div :class="lighMode?'bg-gray-300':'bg-gray-600'" class="w-[2px] h-6"></div>
 
           <!-- BOTTOM CARD -->
           <div
             v-if="index % 2 !== 0"
-            class="cursor-pointer mt-10 bg-white shadow-xl rounded-2xl p-5 w-70 gap-5 text-center hover:scale-105 transition flex items-center"
+            :class="lighMode?'bg-white':'bg-gray-600'" class="cursor-pointer mt-10 shadow-xl rounded-2xl p-5 w-70 gap-5 text-center hover:scale-105 transition flex items-center"
           >
             <div>
                 <img :src="item.logo" :alt="item.school" class="w-15">
@@ -62,10 +62,10 @@
             <h3 class="text-sm font-semibold text-[#0DB760]">
               {{ item.title }}
             </h3>
-            <p class="text-sm text-gray-700 mt-1">
+            <p :class="lighMode?'text-gray-600':'text-gray-400'" class="text-sm mt-1">
               {{ item.school }}
             </p>
-            <p class="text-xs text-gray-400">
+            <p :class="lighMode?'text-gray-400':'text-gray-300'" class="text-xs">
               {{ item.field }}
             </p>
             </div>
@@ -98,6 +98,9 @@
 
 </template>
 <script setup>
+import { useTheme } from '../../composables/useTheme';
+
+const {lighMode} = useTheme();
 const education = [
   {
     title: "Preparatory",

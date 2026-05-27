@@ -1,5 +1,8 @@
 <script setup>
 import { ref, computed } from "vue";
+import { useTheme } from "../../composables/useTheme";
+
+const {lighMode} = useTheme();
 
 const activeFilter = ref("all");
 
@@ -53,7 +56,7 @@ const setFilter = (filter) => {
 <template>
     <div class="flex items-center justify-center mt-20 flex-col gap-10">
       <div class="w-full flex flex-col md:flex-row justify-between items-center gap-5">
-        <p class="text-4xl font-bold">My  <span class="text-[#0DB760]">Tools</span></p>
+        <p :class="lighMode?'text-black':'text-gray-400'" class="text-4xl font-bold">My  <span class="text-[#0DB760]">Tools</span></p>
         <div class="z-2 flex md:gap-5 bg-[#0db760] w-full md:w-1/2 px-4 py-3 items-center justify-around rounded-full">
   <button
     @click="setFilter('all')"
