@@ -9,9 +9,9 @@ const skills = ref([
   
   { name: "eliora.com", img: "eliora.jpg", category: "web",  },
   { name: "NTRT.com", img: "hongkong.jpg", category: "web", },
-  { name: "Vue", img: "prime.jpg", category: "web", },
+  { name: "Prime", img: "prime.jpg", category: "web", },
   { name: "Bunna.et", img: "buna.jpg", category: "mobile",  },
-  { name: "NTRT.com", img: "hongkong.jpg", category: "web", },
+  { name: "Kulfinet", img: "hongkong.jpg", category: "Mobile", },
   { name: "Vue", img: "prime.jpg", category: "web", },
   
 ]);
