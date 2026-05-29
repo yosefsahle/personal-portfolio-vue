@@ -2,10 +2,11 @@
 import { ref, computed } from "vue";
 import { useTheme } from "../../composables/useTheme";
 
-const activeFilter = ref("all");
-const {lightMode} = useTheme();
 
-const skills = ref([  
+const activeFilter = ref("all");
+const {lighMode} = useTheme();
+
+const Projects = ref([  
   
   { name: "eliora.com", img: "eliora.jpg", category: "web",  },
   { name: "NTRT.com", img: "hongkong.jpg", category: "web", },
@@ -29,80 +30,21 @@ const setFilter = (filter) => {
 </script>
 
 <template>
-    <div class="flex items-center justify-center mt-20 flex-col gap-10">
-      <div class="w-full flex flex-col md:flex-row justify-between items-center gap-5">
-        <p class="text-4xl font-bold">My  <span class="text-[#0DB760]">Tools</span></p>
-        <div class="z-2 flex md:gap-5 bg-[#0db760] w-full md:w-1/2 px-4 py-3 items-center justify-around rounded-full">
-  <button
-    @click="setFilter('all')"
-    :class="activeFilter === 'all' ? lightMode ? 'bg-white text-[#0DB760] px-5':'bg-black text-[#0DB760] px-5' : lightMode ? 'text-white hover:bg-gray-100/10 text-sm':'text-black hover:bg-gray-100/10 text-sm'"
-    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
-  >
-    All
-  </button>
+<div class="flex items-center justify-center mt-10 flex-col gap-10">
 
-  <button
-    @click="setFilter('web')"
-    :class="activeFilter === 'web' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
-    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
-  >
-    Web
-  </button>
-
-  <button
-    @click="setFilter('mobile')"
-    :class="activeFilter === 'mobile' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
-    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
-  >
-    Mobile
-  </button>
-
-  <button
-    @click="setFilter('backend')"
-    :class="activeFilter === 'backend' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
-    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
-  >
-    Backend
-  </button>
-  <button
-    @click="setFilter('design')"
-    :class="activeFilter === 'design' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
-    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
-  >
-    Design
-  </button>
-</div>
-</div>
-<div class="mb-20 flex w-full flex-col md:flex-row gap-5">
-   <div class="flex flex-col justify-between w-full">
-      <div ref="scrollContainer" class="flex overflow-x-auto no-scrollbar scroll-smooth gap-5 py-5">
-        <div v-for="(project, index) in filteredSkills" :key="index" class="w-100 min-w-[200px] md:min-w-[330px] h-90 rounded-lg shadow-lg shadow-gray-300 hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
-          <div class="h-4/5 bg-gray-100 rounded-t-lg flex items-center justify-center overflow-hidden">
-            <img :src="`/src/assets/projects/${project.img}`" class="object-contain transition-transform duration-300 hover:scale-110"/>
-          </div>
-          <div class="p-3 bg-white rounded-b-lg">
-            <p class="text-sm">{{ project.name }}</p>
-            <p class="text-xs text-gray-400">{{ project.category }}</p>
-          </div>
-        </div>  
+    <!-- <p :class="lighMode?'text-black':'text-gray-400'" class="text-center text-4xl font-bold">My  <span class="text-[#0DB760]">Projects</span></p> -->
+  <div v-for="project in Projects" class="flex w-full flex-col gap-2">
+    <div  class="flex gap-2">
+      <div class="w-60 h-60 rounded-md border cursor-pointer border-red overflow-hidden items-center">
+        <img class="w-60 h-60 hover:scale-110 transition-transform duration-300" :src="`/src/assets/projects/${project.img}`" alt="">
+        
+          <button class="relative left-15 bottom-10 z-2 text-black border border-white/40 rounded-full px-5 bg-white/40 hover:bg-black/40 hover:text-white transition-transform duration-300 cursor-pointer">Visite site <i class="fa-solid fa-arrow-right rotate-325"></i></button>
       </div>
-      <div class="w-full flex flex-row gap-5  justify-between">
-          <i class="fa-solid fa-arrow-left-long cursor-pointer text-2xl" @click="scrollLeft"></i>
-          <i class="fa-solid fa-arrow-right-long cursor-pointer text-2xl" @click="scrollRight"></i>
-        </div>
-    </div>
-</div>
-<!-- <div v-if="activeFilter !== 'all'" class="mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 w-5/6">
-  <div v-for="(skill, index) in filteredSkills" :key="index" class="h-40 rounded-lg shadow-lg shadow-gray-300 hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
-    <div class="h-2/3 bg-gray-100 rounded-t-lg flex items-center justify-center">
-      <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" />
-    </div>
-
-    <div class="p-3 bg-white rounded-b-lg">
-      <p class="text-sm">{{ skill.name }}</p>
-      <p class="text-xs text-gray-400">{{ skill.type }}</p>
+      <div class="w-200 border rounded-md p-5">
+        <p>{{ project.name }}</p>
+        <p>{{ project.category }}</p>
+      </div>
     </div>
   </div>
-</div> -->
-    </div>
+</div>
 </template>

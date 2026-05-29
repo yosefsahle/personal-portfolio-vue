@@ -16,7 +16,7 @@
             <div class="top-20 left-90 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm"></div>
             <!-- <div class="top-10 left-10 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div> -->
             <div class="top-90 left-80 absolute w-[30px] h-[30px] bg-[#0DB760] rounded-[100%] blur-sm"></div>
-            <div v-for="(skill, index) in skills" :key="index" :class="[ skill.z || 'z-2', skill.position,lightMode?'bg-white':'bg-[#0DB760]/50', 'absolute rounded-md shadow-lg flex items-center gap-5', skill.name ? 'px-2 py-2' : 'p-2', skill.float]">
+            <div v-for="(skill, index) in skills" :key="index" :class="[ skill.z || 'z-2', skill.position,lighMode?'bg-white':'bg-[#0DB760]/50', 'absolute rounded-md shadow-lg flex items-center gap-5', skill.name ? 'px-2 py-2' : 'p-2', skill.float]">
                 <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" class="w-8"/>
                 <!-- Show text only if exists -->
                  <span v-if="skill.name">{{ skill.name }}</span>
@@ -24,15 +24,15 @@
             <div class="z-1 rotate-270 md:rotate-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-2 flex items-center w-full items-center justify-center">
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">M</p>
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">Y</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">&ensp;</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">P</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">R</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">O</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">J</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">E</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">C</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">T</p>
-                <p :class="lightMode?'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">S</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">&ensp;</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">P</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">R</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">O</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">J</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">E</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">C</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">T</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">S</p>
 
             </div>
 
@@ -53,9 +53,9 @@
 </template>
 <script setup>
 import myProjects from '../components/common/myProjects.vue';
-import { useTheme } from '../composables/useTheme';
+import { useTheme } from '../composables/useTheme.js';
 
-const {lightMode} = useTheme();
+const {lighMode} = useTheme();
 
 const skills = [
   { name: "Html", icon: "html", position: "top-90 right-80", float: "float-1" },
