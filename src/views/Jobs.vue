@@ -22,17 +22,18 @@
                  <span v-if="skill.name">{{ skill.name }}</span>
             </div>
             <div class="z-1 rotate-270 md:rotate-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-2 flex items-center w-full items-center justify-center">
-                <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">M</p>
+                <!-- <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">M</p>
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">Y</p>
-                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">&ensp;</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">&ensp;</p> -->
                 <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">P</p>
-                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">R</p>
                 <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">O</p>
-                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">J</p>
-                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">E</p>
-                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">C</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">R</p>
                 <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">T</p>
-                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">S</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">F</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">O</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">L</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">I</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">O</p>
 
             </div>
 
@@ -49,7 +50,7 @@
         
         
     </div>
-    <myProjects />
+    <companyProjects />
     
 </template>
 <script setup>
