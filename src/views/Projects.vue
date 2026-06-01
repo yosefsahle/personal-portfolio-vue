@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col md:flex-row mt-5 items-center ">
-        <div class="md:h-108"></div>
+        <div class="h-140 md:h-108"></div>
         
         <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full">
             <div class="top-30 left-20 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] blur-sm"></div>
@@ -21,7 +21,7 @@
                 <!-- Show text only if exists -->
                  <span v-if="skill.name">{{ skill.name }}</span>
             </div>
-            <div class="z-1 rotate-270 md:rotate-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-2 flex items-center w-full items-center justify-center">
+            <div class="hidden z-1 rotate-270 md:rotate-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-2 md:flex items-center w-full items-center justify-center">
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">M</p>
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">Y</p>
                 <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">&ensp;</p>
@@ -34,6 +34,10 @@
                 <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">T</p>
                 <p :class="lighMode ? 'text-black':'text-white'" class="text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">S</p>
 
+            </div>
+            <div class=" md:hidden flex-col z-1 absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-2 flex items-center w-full items-center justify-center">
+                <p class="text-9xl font-bold text-[#0DB760]">My</p>
+                <p :class="lighMode ? 'text-black':'text-white'" class="text-7xl font-bold">Projects</p>
             </div>
 
 
