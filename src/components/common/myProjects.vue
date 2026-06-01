@@ -8,12 +8,8 @@ const {lighMode} = useTheme();
 
 const Projects = ref([  
   
-  { name: "eliora.com", img: "eliora.jpg", category: "web", desciption:"lorem ipusm deus to larget hteon vghepnsv jsnon srpeatele al voe oebo eoben balel nvosrfnvajlorem ipusm deus to larget hteon vghepnsv jsnon srpeatele  ojrb e" },
-  { name: "NTRT.com", img: "hongkong.jpg", category: "web",desciption:"lorem ipusm deus to larget hteon vghepnsv jsnon srpeatele al voe oebo eoben balel nvosrfnvaj rlorem ipusm deus to larget hteon vghepnsv jsnon srpeatele  ojrb e" },
-  { name: "Prime", img: "prime.jpg", category: "web", desciption:"lorem ipusm deus to larget hteon vghepnsv jsnon srpeatele al voe oebo eoben balel nvosrfnvaj lorem ipusm deus to larget hteon vghepnsv jsnon srpeatele r ojrb e"},
-  { name: "Bunna.et", img: "buna.jpg", category: "mobile", desciption:"lorem ipusm deus to larget hteon vghepnsv jsnon srpeatele al voe oebo eoben balel nvosrfnvaj rlorem ipusm deus to larget hteon vghepnsv jsnon srpeatele  ojrb e" },
-  { name: "Kulfinet this is the best to build a lone and deploy to any platfrom", img: "hongkong.jpg", category: "Mobile",desciption:"lorem ipusm deus to larget hteon vghepnsv jsnon srpeatele al voe oebo eoben balel nvosrfnvaj rlorem ipusm deus to larget hteon vghepnsv jsnon srpeatele  ojrb e" },
-  { name: "Vue", img: "prime.jpg", category: "web",desciption:"lorem ipusm deus to larget hteon vghepnsv jsnon srpeatele al voe oebo eoben balel nvosrfnvaj rlorem ipusm deus to larget hteon vghepnsv jsnon srpeatele  ojrb e" },
+  { name: "Ekubers", img: "ekubers.jpg", category: "Mobile/web", desciption:"lrb e",frameworks:['flutter.png','talwind.png'] },
+  { name: "Search ET", img: "searchet.jpg", category: "Telegram Bot",desciption:"lorem ipusm deus to larget lteon lteon vghepnsv jsnon srpeatele al voe oebo eo ojrb e vghepnsv jsnon srpeatele al voe oebo eo ojrb e",frameworks:['react.png'] },
   
 ]);
 
@@ -34,13 +30,15 @@ const setFilter = (filter) => {
     <!-- <p :class="lighMode?'text-black':'text-gray-400'" class="text-center text-4xl font-bold">My  <span class="text-[#0DB760]">Projects</span></p> -->
 
     <div :key="index" v-for="(item, index) in Projects" class="">
-      <div class="flex">
-        <div :class="lighMode?'bg-white':'bg-black'" class="flex h-5 relative left-200 bottom-2 z-2 text-black border  rounded-full px-5 cursor-pointer"><i class="relative left-200 bottom-2 fa-brands fa-flutter"></i></div>
-        <div class="flex-3 w-60 h-60 rounded-md border cursor-pointer border-red overflow-hidden items-center">
-          <img class="w-60 h-60 hover:scale-110 transition-transform duration-300" :src="`/src/assets/projects/${item.img}`" alt="">
+      <div class="flex flex-col md:flex-row relative">
+        <div :class="lighMode?'bg-white':'bg-black'" class="flex h-5 absolute left-200 -top-2 z-2 text-black border rounded-full p-3 cursor-pointer gap-3 items-center">
+          <img v-for="(fw, i) in item.frameworks" :key="i" :src="`/src/assets/icons/${fw}`" class="w-5 h-5 object-contain hover:scale-110 transition"/>
         </div>
-        <div class="flex-9 border border-white rounded-md p-5 gap-2 flex flex-col">
-          <p :class="lighMode?'text-black':'text-white'" >{{ item.name }}</p>
+        <div class="md:flex-3 w-full h-auto md:w-60 h-60 rounded-md border cursor-pointer border-red overflow-hidden items-center">
+          <img class="w-full h-auto md:w-60 md:h-60 hover:scale-110 transition-transform duration-300" :src="`/src/assets/projects/${item.img}`" alt="">
+        </div>
+        <div class="w-full md:flex-9 md:min-w-200 border border-white rounded-md p-5 gap-2 flex flex-col">
+          <p :class="lighMode?'text-black':'text-white'" class="w-full text-xl font-bold" >{{ item.name }}</p>
           <p :class="lighMode?'text-black':'text-white'" >{{ item.category }}</p>
           <p :class="lighMode?'text-black':'text-gray-400'" >{{ item.desciption }}</p>
         </div>
