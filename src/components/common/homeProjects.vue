@@ -7,11 +7,11 @@ const {lighMode} = useTheme();
 
 // 👉 Scroll functions
 const scrollLeft = () => {
-  scrollContainer.value.scrollBy({ left: -300, behavior: 'smooth' })
+  scrollContainer.value.scrollBy({ left: -280, behavior: 'smooth' })
 }
 
 const scrollRight = () => {
-  scrollContainer.value.scrollBy({ left: 300, behavior: 'smooth' })
+  scrollContainer.value.scrollBy({ left: 280, behavior: 'smooth' })
 }
 </script>
 
@@ -39,52 +39,41 @@ const scrollRight = () => {
     </div>
 
     <!-- RIGHT SIDE -->
-    <div class="flex w-full md:w-3/5 h-auto md:h-90 flex-col md:flex-row gap-5">
+    <div class="flex w-full md:w-3/5 flex-col md:flex-row gap-5">
 
 
       <!-- RIGHT COLUMN -->
        <div class="flex flex-col justify-between w-full">
         <!-- 🟢 TOP: NEXT IMAGES -->
-         <div ref="scrollContainer" class="flex flex-col gap-3 overflow-x-auto no-scrollbar scroll-smooth">
+         <div ref="scrollContainer" class="flex flex-col gap-3 overflow-x-auto no-scrollbar scroll-smooth mb-5">
          <div  class="flex gap-4 ">
           <!-- IMAGE ITEM -->
-           <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/buna.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="../../assets/projects/eliora.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/prime.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="../../assets/projects/ekubers.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="../../assets/projects/kulfinet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="../../assets/projects/searchet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="../../assets/projects/prime.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="../../assets/projects/sparaz.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="../../assets/projects/buna.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
             <img src="../../assets/projects/hongkong.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
           </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="https://images01.nicepagecdn.com/page/28/47/website-design-preview-284704.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
-          </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="https://images01.nicepagecdn.com/page/28/47/website-design-preview-284704.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
-          </div>
         </div>
-        <div class="flex gap-4">
-          <!-- IMAGE ITEM -->
-           <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/bunna-m.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
-          </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/prime-m.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
-          </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/hongkong-m.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
-          </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="https://images01.nicepagecdn.com/page/28/47/website-design-preview-284704.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
-          </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="https://images01.nicepagecdn.com/page/28/47/website-design-preview-284704.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
-          </div>
-          <div class="min-w-[240px] h-40 rounded-lg overflow-hidden">
-            <img src="https://images01.nicepagecdn.com/page/28/47/website-design-preview-284704.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
-          </div>
-        </div>
+        
         </div>
 
   <!-- 🟢 BOTTOM CONTROLS -->

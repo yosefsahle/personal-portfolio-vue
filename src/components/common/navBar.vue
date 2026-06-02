@@ -41,7 +41,7 @@
               <i :class="!lighMode ? 'text-white' : 'text-gray-500'" class="fa-solid fa-moon text-lg transition-all duration-300"></i>
             </button>
           </div>
-          <button class="hidden md:block px-5 py-2 rounded-lg border-2 border-[#0DB760] text-[#0DB760] font-semibold hover:bg-[#0DB760] hover:text-white transition cursor-pointer">
+          <button @click="downloadCV" class="hidden md:block px-5 py-2 rounded-lg border-2 border-[#0DB760] text-[#0DB760] font-semibold hover:bg-[#0DB760] hover:text-white transition cursor-pointer">
             Download CV
           </button>
         </div>
@@ -77,6 +77,7 @@
         </router-link>
 
         <button
+        @click="downloadCV"
           class="mt-4 px-5 py-3 rounded-lg border-2 bg-[#0DB760] text-white font-semibold hover:bg-[#0DB760] hover:text-white transition"
         >
           Download CV
@@ -91,6 +92,7 @@
 import { useTheme } from '../../composables/useTheme';
 import { useRoute } from "vue-router";
 import { ref, onMounted, onUnmounted } from "vue";
+import YosefSahle from '../../assets/cv/Yosef_Sahle.pdf';
 const { lighMode, toggleMode } = useTheme();
 
 const route = useRoute();
@@ -109,6 +111,13 @@ const isActive = (path) => route.path === path;
 
 const toggleMenu = () => {
   open.value = !open.value;
+};
+
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = YosefSahle;
+  link.download = "Yosef_Sahle_2025.pdf"; // file name when downloading
+  link.click();
 };
 
 const closeMenu = () => {
