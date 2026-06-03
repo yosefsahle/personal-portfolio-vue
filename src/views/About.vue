@@ -40,10 +40,11 @@
     </div>
     <AboutEducation/>
     <AboutSkills/>
+    <myProjects />
     <div class="flex flex-col md:flex-row gap-10 items-center justify-around mb-20">
         <img src="https://streak-stats.demolab.com?user=yosefsahle" />
-        <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&title=Stars,Followers,Commits,MultiLanguage,Repositories,PullRequest,Experience,Followers,Issues&column=5&margin-w=10&&margin-h=5" alt="" class="hidden md:block">
-        <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&title=Stars,Followers,Commits,MultiLanguage,Repositories,PullRequest,Experience,Followers,Issues&column=4&margin-w=10&&margin-h=5" alt="" class="md:hidden">
+        <!-- <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&title=Stars,Followers,Commits,MultiLanguage,Repositories,PullRequest,Experience,Followers,Issues&column=5&margin-w=10&&margin-h=5" alt="" class="hidden md:block">
+        <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&title=Stars,Followers,Commits,MultiLanguage,Repositories,PullRequest,Experience,Followers,Issues&column=4&margin-w=10&&margin-h=5" alt="" class="md:hidden"> -->
         <!-- <img src="https://github-profile-trophy.vercel.app/?username=yosefsahle&theme=radical&no-frame=true&no-bg=false&margin-w=5&column=4" alt=""> -->
     </div>
 
@@ -65,6 +66,7 @@ import CircularProgress from '../components/reusables/CircularProgress.vue';
 import AboutSkills from '../components/common/about-skills.vue';
 import AboutEducation from '../components/common/aboutEducation.vue';
 import { useTheme } from '../composables/useTheme';
+import myProjects from '../components/common/myProjects.vue';
 
 const {lighMode} = useTheme();
 

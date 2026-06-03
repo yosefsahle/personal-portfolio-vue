@@ -19,7 +19,7 @@
             <div v-for="(skill, index) in skills" :key="index" :class="[ skill.z || 'z-2', skill.position,lighMode?'bg-white':'bg-[#0DB760]/50', 'absolute rounded-md shadow-lg flex items-center gap-5', skill.name ? 'px-2 py-2' : 'p-2', skill.float]">
                 <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" class="w-8"/>
                 <!-- Show text only if exists -->
-                 <span v-if="skill.name">{{ skill.name }}</span>
+                 <span v-if="skill.name" class="hidden md:block">{{ skill.name }}</span>
             </div>
             <div class="hidden z-1 rotate-270 md:rotate-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md p-2 md:flex items-center w-full items-center justify-center">
                 <p class="text-[#0DB760] text-9xl font-extrabold z-1 hover:text-yellow-500 cursor-pointer hover:scale-130 transition-transform duration-300">M</p>
@@ -42,13 +42,13 @@
 
 
             <div class="md:top-30 top-80 md:right-20 right-8 absolute w-[100px] h-[100px] bg-[#F4C430] rounded-full blur-sm"></div>
-            <div class="z-2 md:top-40 top-90 md:right-100 right-70 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm"></div>
-            <div class="z-2 md:top-70 top-90 md:right-10 right-70 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm"></div>
-            <div class="md:top-20 top-70 md:right-60 right-45 absolute w-[100px] h-[100px] bg-[#3A86FF] rounded-full blur-sm"></div>
-            <div class="md:top-50 top-100 md:right-150 right-0 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm"></div>
-            <div class="md:top-35 top-85 md:right-22 right-10 absolute w-[300px] h-[300px] bg-[#F4C430] rounded-full blur-lg"></div>
-            <div class="md:top-90 top-140 md:right-70 right-60 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm"></div>
-            <div class="md:top-85 top-140 md:left-20 right-8 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm"></div>
+            <div class="z-2 md:top-40 top-40 md:right-100 right-70 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm"></div>
+            <div class="z-2 md:top-70 top-20 md:right-10 right-20 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm"></div>
+            <div class="md:top-20 top-20 md:right-60 right-45 absolute w-[100px] h-[100px] bg-[#3A86FF] rounded-full blur-sm"></div>
+            <div class="md:top-50 top-50 md:right-150 right-0 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm"></div>
+            <div class="md:top-35 top-35 md:right-22 right-10 absolute w-[300px] h-[300px] bg-[#F4C430] rounded-full blur-lg"></div>
+            <div class="md:top-90 top-90 md:right-70 right-60 absolute w-[100px] h-[100px] bg-[#0DB760] rounded-full blur-sm"></div>
+            <div class="md:top-85 top-90 md:left-20 right-8 absolute w-[100px] h-[100px] bg-[#E63946] rounded-full blur-sm"></div>
         </div>
         
         
@@ -75,7 +75,7 @@ const skills = [
 
   // icon-only ones
   { icon: "illustrator", position: "top-10 right-120", float: "float-1" },
-  { icon: "illustrator", position: "top-60 right-90", float: "float-1", z: "z-1" },
+  { icon: "react", position: "top-60 right-90", float: "float-1", z: "z-1" },
   { icon: "figma", position: "top-80 right-130", float: "float-1" },
   { icon: "illustrator", position: "top-80 right-60", float: "float-1" },
 ];
