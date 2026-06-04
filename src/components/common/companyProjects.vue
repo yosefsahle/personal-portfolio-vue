@@ -65,7 +65,7 @@ const sortedProjects = computed(() => {
 >
     <div class="relative overflow-hidden rounded-2xl">
       <img
-        :src="`/src/assets/projects/${item.img}`"
+        :src="`/projects/${item.img}`"
         class="w-full object-cover group-hover:scale-110 transition duration-500"
       />
 
