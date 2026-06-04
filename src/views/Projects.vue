@@ -62,7 +62,7 @@
 import myProjects from '../components/common/myProjects.vue';
 import { useTheme } from '../composables/useTheme.js';
 import companyProjects from '../components/common/companyProjects.vue'
-import Jobslist from '../components/common/Jobslist.vue';
+import Jobslist from '../components/common/jobslist.vue';
 
 const {lighMode} = useTheme();
 
