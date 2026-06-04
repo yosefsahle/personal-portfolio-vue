@@ -49,28 +49,28 @@ const scrollRight = () => {
          <div  class="flex gap-4 ">
           <!-- IMAGE ITEM -->
            <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/eliora.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+            <img src="/projects/eliora.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/ekubers.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+            <img src="/projects/ekubers.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/kulfinet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+            <img src="/projects/kulfinet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/searchet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+            <img src="/projects/searchet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/prime.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            <img src="/projects/prime.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/sparaz.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            <img src="/projects/sparaz.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/buna.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            <img src="/projects/buna.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="../../assets/projects/hongkong.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            <img src="/projects/hongkong.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
           </div>
         </div>
         

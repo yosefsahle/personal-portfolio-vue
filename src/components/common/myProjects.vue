@@ -35,7 +35,7 @@ const setFilter = (filter) => {
           <img v-for="(fw, i) in item.frameworks" :key="i" :src="`/src/assets/icons/${fw}`" class="w-6 h-6 object-contain hover:scale-110 transition"/>
         </div>
         <div class="md:flex-3 w-full h-auto md:w-60 h-60 rounded-md border cursor-pointer border-red overflow-hidden items-center">
-          <img class="w-full h-auto md:w-60 md:h-60 hover:scale-110 transition-transform duration-300" :src="`/src/assets/projects/${item.img}`" alt="">
+          <img class="w-full h-auto md:w-60 md:h-60 hover:scale-110 transition-transform duration-300" :src="`/projects/${item.img}`" alt="">
         </div>
         <div :class="lighMode?'shadow-[0_0_15px_rgba(0,0,0,0.25)]':'shadow-[0_0_15px_rgba(255,255,255,0.15)]'" class="w-full md:flex-9 md:min-w-200 rounded-md p-5 gap-2 flex flex-col  ">
           <p class="text-[#0DB760] w-full text-2xl font-bold" >{{ item.name }}</p>
