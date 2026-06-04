@@ -54,12 +54,15 @@
         
     </div>
     <myProjects />
+    <companyProjects />
+    <Jobslist />
     
 </template>
 <script setup>
 import myProjects from '../components/common/myProjects.vue';
 import { useTheme } from '../composables/useTheme.js';
 import companyProjects from '../components/common/companyProjects.vue'
+import Jobslist from '../components/common/Jobslist.vue';
 
 const {lighMode} = useTheme();
 
