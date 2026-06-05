@@ -32,7 +32,7 @@ const setFilter = (filter) => {
     <div :key="index" v-for="(item, index) in Projects" class="">
       <div class="flex flex-col md:flex-row relative gap-3">
         <div :class="lighMode?'bg-white':'bg-black'" class="hidden md:flex h-6 absolute left-200 -top-4 z-2 text-black border-gray-400 border rounded-full px-3 py-4 cursor-pointer gap-3 items-center">
-          <img v-for="(fw, i) in item.frameworks" :key="i" :src="`/src/assets/icons/${fw}`" class="w-6 h-6 object-contain hover:scale-110 transition"/>
+          <img v-for="(fw, i) in item.frameworks" :key="i" :src="`icons/${fw}`" class="w-6 h-6 object-contain hover:scale-110 transition"/>
         </div>
         <div class="md:flex-3 w-full h-auto md:w-60 h-60 rounded-md border cursor-pointer border-red overflow-hidden items-center">
           <img class="w-full h-auto md:w-60 md:h-60 hover:scale-110 transition-transform duration-300" :src="`/projects/${item.img}`" alt="">
@@ -42,7 +42,7 @@ const setFilter = (filter) => {
           <p :class="lighMode?'text-gray-500':'text-gray-400'" >{{ item.category }}</p>
           <p :class="lighMode?'text-gray-400':'text-gray-600'" >{{ item.desciption }}</p>
           <div class="mt-3 md:hidden flex text-black cursor-pointer gap-5 items-center">
-            <img v-for="(fw, i) in item.frameworks" :key="i" :src="`/src/assets/icons/${fw}`" class="w-8 h-8 object-contain hover:scale-110 transition"/>
+            <img v-for="(fw, i) in item.frameworks" :key="i" :src="`icons/${fw}`" class="w-8 h-8 object-contain hover:scale-110 transition"/>
           </div>
         </div>
 

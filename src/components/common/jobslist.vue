@@ -8,37 +8,11 @@ const activeFilter = ref("all");
 
 const skills = ref([  
   
-  { name: "Flutter", icon: "flutter", category: "mobile", type: "Framework" },
-  { name: "React", icon: "react", category: "web", type: "Framework" },
-  { name: "Vue", icon: "vue", category: "web", type: "Framework" },
-  { name: "Angular", icon: "angular", category: "web", type: "Framework" },
-  { name: "Kotlin", icon: "kotlin", category: "mobile", type: "Language" },
-  { name: "Next.js", icon: "nextjs", category: "web", type: "Framework" },
-  { name: "Django", icon: "django", category: "backend", type: "Framework" },
-  { name: "Tailwind", icon: "tailwind", category: "web", type: "Framework" },
-  { name: "Bootstrap", icon: "bootstrap", category: "web", type: "Framework" },
-  { name: "HTML", icon: "html", category: "web", type: "Markup" },
-  { name: "CSS", icon: "css", category: "web", type: "Style" },
+  { name: "Flutter", icon: "ekubers.jpg", category: "mobile", type: "Framework" },
+  { name: "React", icon: "searchet.jpg", category: "design", type: "Framework" },
+  { name: "Vue", icon: "eliora.jpg", category: "web", type: "Framework" },
 
-  { name: "Dart", icon: "dart", category: "mobile", type: "Language" },
-  { name: "Python", icon: "py", category: "backend", type: "Language" },
-  { name: "JavaScript", icon: "js", category: "web", type: "Language" },
-  { name: "TypeScript", icon: "ts", category: "web", type: "Language" },
-  { name: "Java", icon: "java", category: "backend", type: "Language" },
-  { name: "PHP", icon: "php", category: "backend", type: "Language" },
 
-  
-  { name: "Firebase", icon: "firebase", category: "backend", type: "BaaS" },
-  { name: "MySQL", icon: "mysql", category: "backend", type: "Database" },
-  { name: "Postgres", icon: "postgres", category: "backend", type: "Database" },
-
-  { name: "Figma", icon: "figma", category: "design", type: "UI/UX" },
-  { name: "Photoshop", icon: "photoshop", category: "design", type: "Design" },
-  { name: "Illustrator", icon: "illustrator", category: "design", type: "Design" },
-  { name: "XD", icon: "xd", category: "design", type: "UI/UX" },
-
-  { name: "Postman", icon: "postman", category: "backend", type: "Tool" },
-  
 ]);
 
 const filteredSkills = computed(() => {
@@ -56,7 +30,7 @@ const setFilter = (filter) => {
 <template>
     <div class="flex items-center justify-center mt-20 flex-col gap-10">
       <div class="w-full flex flex-col md:flex-row justify-between items-center gap-5">
-        <p :class="lighMode?'text-black':'text-gray-400'" class="text-4xl font-bold">My  <span class="text-[#0DB760]">Tools</span></p>
+        <p :class="lighMode?'text-black':'text-gray-400'" class="text-4xl font-bold">My <span class="text-[#0DB760]">Executions</span></p>
         <div class="z-2 flex md:gap-5 bg-[#0db760] w-full md:w-1/2 px-4 py-3 items-center justify-around rounded-full">
   <button
     @click="setFilter('all')"
@@ -82,13 +56,7 @@ const setFilter = (filter) => {
     Mobile
   </button>
 
-  <button
-    @click="setFilter('backend')"
-    :class="activeFilter === 'backend' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
-    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
-  >
-    Backend
-  </button>
+  
   <button
     @click="setFilter('design')"
     :class="activeFilter === 'design' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
@@ -96,16 +64,23 @@ const setFilter = (filter) => {
   >
     Design
   </button>
+  <button
+    @click="setFilter('others')"
+    :class="activeFilter === 'others' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
+  >
+    Others
+  </button>
 </div>
 </div>
 
-<div class="mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 w-5/6">
-  <div v-for="(skill, index) in filteredSkills" :key="index" class="h-40 rounded-lg shadow-lg shadow-gray-300 hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
-    <div class="h-2/3 bg-gray-100 rounded-t-lg flex items-center justify-center">
-      <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" />
+<div class="mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+  <div :class="lighMode?'shadow-lg shadow-gray-400 hover:shadow-gray-500':'shadow-lg shadow-gray-300/20'" v-for="(skill, index) in filteredSkills" :key="index" class="rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer">
+    <div class=" bg-gray-100 rounded-t-lg flex items-center justify-center overflow-hidden">
+      <img :src="`/projects/${skill.icon}`" class="hover:scale-105 transition-transform duration-300"/>
     </div>
 
-    <div class="p-3 bg-white rounded-b-lg">
+    <div :class="lighMode?'bg-white':'bg-gray-600/80'" class="p-3 rounded-b-lg">
       <p class="text-sm">{{ skill.name }}</p>
       <p class="text-xs text-gray-400">{{ skill.type }}</p>
     </div>
