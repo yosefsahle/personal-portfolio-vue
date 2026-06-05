@@ -28,7 +28,7 @@
       </nav>
 
       <!-- CTA (Desktop) -->
-      <div class="hidden md:flex gap-5">
+      <div class="hidden md:flex gap-5 items-center">
         <div :class="lighMode ? 'bg-gray-300' : 'bg-gray-600'"  class="relative w-20 h-10 rounded-full p-1 flex items-center transition-all duration-300 ease-in-out justify-between px-3">
           <!-- Sliding Circle -->
            <div :class="lighMode ? 'translate-x-0 bg-white' : 'translate-x-10 bg-black'" class="absolute top-1 left-1 w-8 h-8 rounded-full shadow-md transform transition-all duration-300 ease-in-out"></div>
@@ -44,6 +44,16 @@
           <button @click="downloadCV" class="hidden md:block px-5 py-2 rounded-lg border-2 border-[#0DB760] text-[#0DB760] font-semibold hover:bg-[#0DB760] hover:text-white transition cursor-pointer">
             Download CV
           </button>
+          <a href="https://github.com/yosefsahle" target="_blank" rel="noopener noreferrer">
+            <i :class="lighMode ? 'text-gray-600 hover:text-[#0DB760]':'text-[#0DB760] hover:text-gray-600'" class=" fa-brands fa-github text-lg cursor-pointer hover:scale-120 transition-all duration-300"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yosef-sahle/" target="_blank" rel="noopener noreferrer">
+            <i :class="lighMode ? 'text-gray-600 hover:text-[#0DB760]':'text-[#0DB760] hover:text-gray-600'" class="fa-brands fa-linkedin-in text-lg cursor-pointer hover:scale-120 transition-all duration-300"></i>
+          </a>
+          <a href="https://github.com/yosefsahle" target="_blank" rel="noopener noreferrer">
+            <i :class="lighMode ? 'text-gray-600 hover:text-[#0DB760]':'text-[#0DB760] hover:text-gray-600'" class="fa-brands fa-instagram text-lg cursor-pointer hover:scale-120 transition-all duration-300"></i>
+          </a>
+          
         </div>
 
       <!-- Mobile Menu Button -->
