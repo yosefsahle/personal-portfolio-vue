@@ -64,7 +64,23 @@ const setFilter = (filter) => {
 </script>
 
 <template>
-  <div class="w-full mt-30 flex flex-col justify-between items-center gap-5">
+  <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full">
+            <div class="top-20 left-120 absolute w-[5px] h-[5px] bg-[#F4C430] rounded-[100%] float-1 blur-xs"></div>
+            <div class="top-10 left-20 absolute w-[5px] h-[5px] bg-[#F4C430] rounded-[100%] float-2 blur-xs"></div>
+            <div class="top-30 right-60 absolute w-[50px] h-[50px] bg-[#F4C430] rounded-[100%] float-3 blur-xs"></div>
+            <div class="top-60 right-90 absolute w-[5px] h-[5px] bg-[#3A86FF] rounded-[100%] float-4 blur-xs"></div>
+            <div class="top-20 right-70 absolute w-[5px] h-[5px] bg-[#F4C430] rounded-[100%] float-1 blur-xs"></div>
+            <div class="top-15 left-50 absolute w-[5px] h-[5px] bg-[#0DB760] rounded-[100%] float-2 blur-xs"></div>
+            
+            <div class="top-60 left-50 absolute w-[15px] h-[15px] bg-[#F4C430] rounded-[100%] float-3 opacity-60 blur-xs"></div>
+            <div class="top-40 left-10 absolute w-[15px] h-[15px] bg-[#E63946] rounded-[100%] float-4 opacity-60 blur-xs"></div>
+            <div class="top-20 left-90 absolute w-[15px] h-[15px] bg-[#3A86FF] rounded-[100%] float-1 opacity-60 blur-xs"></div>
+            <div class="top-30 left-70 absolute w-[20px] h-[20px] bg-[#0DB760] rounded-[100%] float-2 opacity-60 blur-xs"></div>
+            <div class="top-90 left-80 absolute w-[20px] h-[20px] bg-[#E63946] rounded-[100%] float-3 opacity-60 blur-xs"></div>
+            <div class="top-50 left-20 absolute w-[40px] h-[40px] bg-[#F4C430] rounded-[100%] float-2 blur-xs"></div>
+            <div class="top-20 right-10 absolute w-[25px] h-[25px] bg-[#E63946] rounded-[100%] float-2 blur-xs"></div>
+        </div>
+  <div class="z-1 w-full mt-30 flex flex-col justify-between items-center gap-5">
 
     <!-- LEFT TEXT -->
     <div class="z-2 w-full flex flex-col md:flex-row gap-5 items-start md:items-end">
@@ -85,7 +101,7 @@ const setFilter = (filter) => {
     </div>
 
     <!-- RIGHT SIDE -->
-    <div class="flex w-full flex-col md:flex-row gap-5">
+    <div class="z-1 flex w-full flex-col md:flex-row gap-5">
 
 
       <!-- RIGHT COLUMN -->

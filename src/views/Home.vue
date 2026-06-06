@@ -6,7 +6,7 @@
             <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-4xl md:text-5xl font-semibold animate-item delay-2">
                 I have <span class="font-bold text-[#0DB760]">Creative Design</span> Experience
             </p>
-            <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm md:text-md animate-item delay-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempora porro expedita, fugiat alias vel vero?</p>
+            <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm md:text-md animate-item delay-3">I am a Software Engineer and Graphic Designer dedicated to the intersection of logic and aesthetics.</p>
             <div class="flex gap-5 animate-item delay-4">
                 <button :class="lighMode ? 'text-white':'text-black'" class="bg-[#0DB760] px-4 py-2 rounded-md font-semibold text-xs md:text-md cursor-pointer">Contact Me</button>
                 <button :class="lighMode ? 'text-black':'text-gray-400'" class="text-xs md:text-md gap-2 flex items-center cursor-pointer">
@@ -49,11 +49,11 @@
     
 
     <homeCounter />
-        <homeSkill />
-        <homeProjects />
-        <homeTools />
-        <testimonials />
-        <homeFooter />  
+    <homeSkill />
+    <homeProjects />
+    <homeTools />
+    <testimonials />
+    <homeFooter />  
 
     <div class="mt-15"></div>
 </template>
