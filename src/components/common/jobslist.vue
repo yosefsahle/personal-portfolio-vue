@@ -8,9 +8,18 @@ const activeFilter = ref("all");
 
 const skills = ref([  
   
-  { name: "Flutter", icon: "ekubers.jpg", category: "mobile", type: "Framework" },
-  { name: "React", icon: "searchet.jpg", category: "design", type: "Framework" },
-  { name: "Vue", icon: "eliora.jpg", category: "web", type: "Framework" },
+  { name: "Ekubers", icon: "ekubers.jpg", category: "logo", type: "Logo Design" },
+  { name: "Search Et", icon: "searchet.jpg", category: "logo", type: "Logo Design" },
+  { name: "Monday Post", icon: "design.jpg", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-1.jpg", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-2.jpg", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-3.jpg", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-4.jpg", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-5.png", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-6.png", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-7.png", category: "social", type: "Social Post" },
+  { name: "Monday Post", icon: "design-8.png", category: "social", type: "Social Post" },
+
 
 
 ]);
@@ -41,35 +50,28 @@ const setFilter = (filter) => {
   </button>
 
   <button
-    @click="setFilter('web')"
-    :class="activeFilter === 'web' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    @click="setFilter('logo')"
+    :class="activeFilter === 'logo' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
     class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
   >
-    Web
+    Logo
   </button>
 
   <button
-    @click="setFilter('mobile')"
-    :class="activeFilter === 'mobile' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    @click="setFilter('social')"
+    :class="activeFilter === 'social' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
     class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
   >
-    Mobile
+    Social
   </button>
 
   
   <button
-    @click="setFilter('design')"
-    :class="activeFilter === 'design' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    @click="setFilter('illustration')"
+    :class="activeFilter === 'illustration' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
     class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
   >
-    Design
-  </button>
-  <button
-    @click="setFilter('others')"
-    :class="activeFilter === 'others' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
-    class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
-  >
-    Others
+    Illustration
   </button>
 </div>
 </div>

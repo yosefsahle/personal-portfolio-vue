@@ -41,7 +41,7 @@
               <i :class="!lighMode ? 'text-white' : 'text-gray-500'" class="fa-solid fa-moon text-lg transition-all duration-300"></i>
             </button>
           </div>
-          <button @click="downloadCV" class="hidden md:block px-5 py-2 rounded-lg border-2 border-[#0DB760] text-[#0DB760] font-semibold hover:bg-[#0DB760] hover:text-white transition cursor-pointer">
+          <button @click="downloadCV" :class="lighMode?'hover:text-white':'hover:text-black'" class="hidden md:block px-5 py-2 rounded-lg border-2 border-[#0DB760] text-[#0DB760] font-semibold hover:bg-[#0DB760] transition cursor-pointer">
             Download CV
           </button>
           <a href="https://github.com/yosefsahle" target="_blank" rel="noopener noreferrer">
@@ -70,8 +70,8 @@
     <!-- Mobile Menu -->
     <div
       v-if="open"
-
-      class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg transition-all"
+      :class="lighMode?'bg-white':'bg-black'"
+      class="md:hidden absolute top-full left-0 w-full shadow-lg transition-all"
     >
       <div class="flex flex-col gap-4 p-5">
 
@@ -81,14 +81,29 @@
           :to="item.path"
           @click="closeMenu"
           class="text-sm hover:text-[#0DB760] transition"
-          :class="isActive(item.path) ? 'text-[#0DB760] font-bold' : 'font-light text-gray-700'"
+          :class="isActive(item.path) ? 'text-[#0DB760] font-bold' : 'text-gray-700'"
         >
           {{  item.name}}
         </router-link>
-
+        <div class="flex items-center justify-between">
+          <p class="text-gray-700">Change Theme</p>
+        <div :class="lighMode ? 'bg-gray-300' : 'bg-gray-600'"  class="relative w-18 h-8 rounded-full p-1 flex items-center transition-all duration-300 ease-in-out justify-between px-3">
+          <!-- Sliding Circle -->
+           <div :class="lighMode ? 'translate-x-1 bg-white' : 'translate-x-9.5 bg-black'" class="absolute top-1 left-1 w-6 h-6 rounded-full shadow-md transform transition-all duration-300 ease-in-out"></div>
+           <!-- Light Button -->
+            <button @click="toggleMode(true)" class=" h-full flex items-center justify-center z-10 cursor-pointer">
+              <i :class="lighMode ? 'text-[#ECBD2C]' : 'text-gray-400'" class="fa-solid fa-sun text-md transition-all duration-300"></i>
+            </button>
+            <!-- Dark Button -->
+             <button @click="toggleMode(false)" class="h-full flex items-center justify-center z-10 cursor-pointer">
+              <i :class="!lighMode ? 'text-white' : 'text-gray-500'" class="fa-solid fa-moon text-md transition-all duration-300"></i>
+            </button>
+          </div>
+          </div>
         <button
         @click="downloadCV"
-          class="mt-4 px-5 py-3 rounded-lg border-2 bg-[#0DB760] text-white font-semibold hover:bg-[#0DB760] hover:text-white transition"
+        :class="lighMode?'text-white':'text-black'"
+          class="mt-4 px-5 py-3 rounded-lg border-2 border-[#0DB760] bg-[#0DB760] font-semibold hover:bg-[#0DB760] hover:text-white transition"
         >
           Download CV
         </button>

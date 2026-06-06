@@ -1,4 +1,12 @@
 <template>
+  <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full">
+            <div class="top-20 right-120 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-1 blur-xs opacity-80"></div>
+            <div class="top-10 right-20 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-2 blur-xs opacity-80"></div>
+            <div class="top-30 left-60 absolute w-[50px] h-[50px] bg-[#F4C430] rounded-[100%] float-3 blur-xs opacity-80"></div>
+            <div class="top-60 left-90 absolute w-[20px] h-[20px] bg-[#3A86FF] rounded-[100%] float-4 blur-xs opacity-80"></div>
+            <div class="top-20 left-70 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-1 blur-xs opacity-80"></div>
+            <div class="top-15 right-50 absolute w-[20px] h-[20px] bg-[#0DB760] rounded-[100%] float-2 blur-xs opacity-80"></div>
+            </div>
   <div 
     ref="sectionRef"
     class="hidden w-full mt-30 md:flex gap-1 justify-between"
@@ -30,6 +38,22 @@
     </div>
 
   </div>
+  <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full">
+            <div class="top-20 left-120 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-1 blur-sm"></div>
+            <div class="top-10 left-20 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-2 blur-sm"></div>
+            <div class="top-30 right-60 absolute w-[50px] h-[50px] bg-[#F4C430] rounded-[100%] float-3 blur-sm"></div>
+            <div class="top-60 right-90 absolute w-[20px] h-[20px] bg-[#3A86FF] rounded-[100%] float-4 blur-sm"></div>
+            <div class="top-20 right-70 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-1 blur-sm"></div>
+            <div class="top-15 left-50 absolute w-[20px] h-[20px] bg-[#0DB760] rounded-[100%] float-2 blur-sm"></div>
+            
+            <div class="top-60 left-50 absolute w-[30px] h-[30px] bg-[#F4C430] rounded-[100%] float-3 blur-sm"></div>
+            <div class="top-40 left-10 absolute w-[30px] h-[30px] bg-[#E63946] rounded-[100%] float-4 blur-sm"></div>
+            <div class="top-20 left-90 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] float-1 blur-sm"></div>
+            <div class="top-30 left-70 absolute w-[40px] h-[40px] bg-[#0DB760] rounded-[100%] float-2 blur-sm"></div>
+            <div class="top-90 left-80 absolute w-[40px] h-[40px] bg-[#E63946] rounded-[100%] float-3 blur-sm"></div>
+            <div class="top-50 left-20 absolute w-[150px] h-[150px] bg-[#F4C430] rounded-[100%] float-2 blur-xl"></div>
+            <div class="top-20 right-10 absolute w-[80px] h-[80px] bg-[#E63946] rounded-[100%] float-2 blur-xl"></div>
+        </div>
 </template>
 
 <script setup>
@@ -69,9 +93,9 @@ onMounted(() => {
       if (entry.isIntersecting && !hasAnimated.value) {
         hasAnimated.value = true
 
-        animateCounter(80, clients)
+        animateCounter(6, clients)
         animateCounter(6, projects)
-        animateCounter(99, reviews)
+        animateCounter(10, reviews)
 
         observer.disconnect() // stop observing after trigger
       }

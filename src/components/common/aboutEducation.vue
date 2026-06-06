@@ -1,4 +1,20 @@
 <template>
+  <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full opacity-60">
+            <div class="top-20 left-120 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-1 blur-sm"></div>
+            <div class="top-10 left-20 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-2 blur-sm"></div>
+            <div class="top-30 right-60 absolute w-[50px] h-[50px] bg-[#F4C430] rounded-[100%] float-3 blur-sm"></div>
+            <div class="top-60 right-90 absolute w-[20px] h-[20px] bg-[#3A86FF] rounded-[100%] float-4 blur-sm"></div>
+            <div class="top-20 right-70 absolute w-[20px] h-[20px] bg-[#F4C430] rounded-[100%] float-1 blur-sm"></div>
+            <div class="top-15 left-50 absolute w-[20px] h-[20px] bg-[#0DB760] rounded-[100%] float-2 blur-sm"></div>
+            
+            <div class="top-60 left-50 absolute w-[30px] h-[30px] bg-[#F4C430] rounded-[100%] float-3 blur-sm"></div>
+            <div class="top-40 left-10 absolute w-[30px] h-[30px] bg-[#E63946] rounded-[100%] float-4 blur-sm"></div>
+            <div class="top-20 left-90 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] float-1 blur-sm"></div>
+            <div class="top-30 left-70 absolute w-[40px] h-[40px] bg-[#0DB760] rounded-[100%] float-2 blur-sm"></div>
+            <div class="top-30 right-20 absolute w-[150px] h-[150px] bg-[#E63946] rounded-[100%] float-3 blur-2xl"></div>
+            <div class="top-50 left-20 absolute w-[150px] h-[150px] bg-[#F4C430] rounded-[100%] float-2 blur-xl"></div>
+
+        </div>
   <div :class="lighMode?'bg-white':'bg-black'" class="w-full flex flex-col items-center gap-10 mt-20">
 
     <!-- Title -->
