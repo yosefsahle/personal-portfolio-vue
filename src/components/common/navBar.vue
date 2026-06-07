@@ -61,9 +61,10 @@
         class="md:hidden flex flex-col gap-1"
         @click="toggleMenu"
       >
-        <span class="w-6 h-0.5 bg-black"></span>
-        <span class="w-6 h-0.5 bg-black"></span>
-        <span class="w-6 h-0.5 bg-black"></span>
+        <span v-if="!open" :class="lighMode?'bg-black':'bg-white'" class="w-6 h-0.5 bg-black"></span>
+        <span v-if="!open" :class="lighMode?'bg-black':'bg-white'" class="w-6 h-0.5 bg-black"></span>
+        <span v-if="!open" :class="lighMode?'bg-black':'bg-white'"class="w-6 h-0.5 bg-black"></span>
+        <span v-if="open" :class="lighMode?'text-black':'text-gray-400'" class="text-3xl">X</span>
       </button>
     </div>
 
