@@ -5,7 +5,7 @@
             <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-4xl font-bold">
                 Why Hire Me For Your Next  <span class="text-[#0DB760]">Project?</span>
             </p>
-            <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm">I’m specialist in UI/UX Designe. My passion is designing & solving problems through user experience and research.</p>
+            <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm">Whether I’m writing clean, scalable code or crafting a brand identity from scratch, my goal is always to create seamless digital experiences</p>
             <div class="flex gap-5 w-full md:w-auto justify-center md:justify-start">
                 <button :class="lighMode ? 'text-white':'text-black'" class="bg-[#0DB760] w-full md:w-auto px-8 py-3 rounded-lg font-semibold">Hire Me</button>
                 
