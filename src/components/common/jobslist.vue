@@ -43,7 +43,7 @@ const setFilter = (filter) => {
         <div class="z-2 flex md:gap-5 bg-[#0db760] w-full md:w-1/2 px-4 py-3 items-center justify-around rounded-full">
   <button
     @click="setFilter('all')"
-    :class="activeFilter === 'all' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    :class="activeFilter === 'all' ? lighMode? 'bg-white text-[#0DB760] px-5':'bg-black text-[#0DB760] px-5' : lighMode ?'text-white hover:bg-gray-100/10 text-sm':'text-black hover:bg-gray-100/10 text-sm'"
     class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
   >
     All
@@ -51,7 +51,7 @@ const setFilter = (filter) => {
 
   <button
     @click="setFilter('logo')"
-    :class="activeFilter === 'logo' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    :class="activeFilter === 'logo' ? lighMode? 'bg-white text-[#0DB760] px-5':'bg-black text-[#0DB760] px-5' : lighMode ?'text-white hover:bg-gray-100/10 text-sm':'text-black hover:bg-gray-100/10 text-sm'"
     class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
   >
     Logo
@@ -59,7 +59,7 @@ const setFilter = (filter) => {
 
   <button
     @click="setFilter('social')"
-    :class="activeFilter === 'social' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    :class="activeFilter === 'social' ? lighMode? 'bg-white text-[#0DB760] px-5':'bg-black text-[#0DB760] px-5' : lighMode ?'text-white hover:bg-gray-100/10 text-sm':'text-black hover:bg-gray-100/10 text-sm'"
     class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
   >
     Social
@@ -68,7 +68,7 @@ const setFilter = (filter) => {
   
   <button
     @click="setFilter('illustration')"
-    :class="activeFilter === 'illustration' ? 'bg-white text-[#0DB760] px-5' : 'text-white hover:bg-gray-100/10 text-sm'"
+    :class="activeFilter === 'illustration' ? lighMode? 'bg-white text-[#0DB760] px-5':'bg-black text-[#0DB760] px-5' : lighMode ?'text-white hover:bg-gray-100/10 text-sm':'text-black hover:bg-gray-100/10 text-sm'"
     class="md:w-1/4 py-2 rounded-full transition cursor-pointer"
   >
     Illustration

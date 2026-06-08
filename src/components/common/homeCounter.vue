@@ -51,7 +51,7 @@
             <div class="top-20 left-90 absolute w-[30px] h-[30px] bg-[#3A86FF] rounded-[100%] float-1 blur-sm"></div>
             <div class="top-30 left-70 absolute w-[40px] h-[40px] bg-[#0DB760] rounded-[100%] float-2 blur-sm"></div>
             <div class="top-90 left-80 absolute w-[40px] h-[40px] bg-[#E63946] rounded-[100%] float-3 blur-sm"></div>
-            <div class="top-50 left-20 absolute w-[150px] h-[150px] bg-[#F4C430] rounded-[100%] float-2 blur-xl"></div>
+            <div class="top-50 left-20 absolute w-[150px] h-[150px] bg-[#F4C430] rounded-[100%] opacity-40 float-2 blur-xl"></div>
             <div class="top-20 right-10 absolute w-[80px] h-[80px] bg-[#E63946] rounded-[100%] float-2 blur-xl"></div>
         </div>
 </template>
