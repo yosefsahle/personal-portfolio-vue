@@ -10,6 +10,7 @@ const skills = ref([
   
   { name: "Ekubers", icon: "ekubers.jpg", category: "logo", type: "Logo Design" },
   { name: "Search Et", icon: "searchet.jpg", category: "logo", type: "Logo Design" },
+  { name: "Mati Barley", icon: "matiBarley.jpg", category: "logo", type: "Logo Design" },
   { name: "Monday Post", icon: "design.jpg", category: "social", type: "Social Post" },
   { name: "Monday Post", icon: "design-1.jpg", category: "social", type: "Social Post" },
   { name: "Monday Post", icon: "design-2.jpg", category: "social", type: "Social Post" },
