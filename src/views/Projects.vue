@@ -53,7 +53,7 @@
         
         
     </div>
-    <myProjects />
+    <!-- <myProjects /> -->
     <companyProjects />
     <Jobslist />
     
