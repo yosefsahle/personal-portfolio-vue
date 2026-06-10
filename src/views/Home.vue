@@ -9,10 +9,10 @@
             <p :class="lighMode ? 'text-black':'text-gray-400'" class="text-sm md:text-md animate-item delay-3">I am a Software Engineer and Graphic Designer dedicated to the intersection of logic and aesthetics.</p>
             <div class="flex gap-5 animate-item delay-4">
                 <button :class="lighMode ? 'text-white':'text-black'" class="bg-[#0DB760] px-4 py-2 rounded-md font-semibold text-xs md:text-md cursor-pointer">Contact Me</button>
-                <button :class="lighMode ? 'text-black':'text-gray-400'" class="text-xs md:text-md gap-2 flex items-center cursor-pointer">
-                    View Portfolio
+                <router-link :to="{ path: '/about' }" :class="lighMode ? 'text-black':'text-gray-400'" class="text-xs md:text-md gap-2 flex items-center cursor-pointer">
+                    About Me
                     <i class="fa-solid fa-arrow-right-long text-[#0DB760] rotate-325"></i>
-                </button>
+                </router-link>
             </div>
         </div>
         <div class="z-1 w-full  flex justify-center items-center animate-item-side delay-3 ">

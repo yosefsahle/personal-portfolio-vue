@@ -101,11 +101,11 @@ const setFilter = (filter) => {
 <div v-if="activeFilter === 'all'" class="mb-20 flex w-full flex-col md:flex-row gap-5">
    <div class="flex flex-col justify-between w-full">
       <div ref="scrollContainer" class="flex overflow-x-auto no-scrollbar scroll-smooth gap-5 py-5">
-        <div v-for="(skill, index) in filteredSkills" :key="index" class="w-100 min-w-[150px] md:min-w-[150px] h-40 rounded-lg shadow-lg shadow-gray-300 hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
-          <div class="h-2/3 bg-gray-100 rounded-t-lg flex items-center justify-center">
+        <div v-for="(skill, index) in filteredSkills" :key="index" :class="lighMode?'shadow-gray-300':'shadow-gray-300/50'" class="w-100 min-w-[150px] md:min-w-[150px] h-40 rounded-lg shadow-lg hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <div :class="lighMode?'bg-gray-100':'bg-white/5'" class="h-2/3 rounded-t-lg flex items-center justify-center">
             <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" />
           </div>
-          <div class="p-3 bg-white rounded-b-lg">
+          <div :class="lighMode?'bg-white':'bg-gray-600'" class="p-3 rounded-b-lg">
             <p class="text-sm">{{ skill.name }}</p>
             <p class="text-xs text-gray-400">{{ skill.type }}</p>
           </div>
@@ -118,12 +118,12 @@ const setFilter = (filter) => {
     </div>
 </div>
 <div v-if="activeFilter !== 'all'" class="mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 w-5/6">
-  <div v-for="(skill, index) in filteredSkills" :key="index" class="h-40 rounded-lg shadow-lg shadow-gray-300 hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
-    <div class="h-2/3 bg-gray-100 rounded-t-lg flex items-center justify-center">
+  <div v-for="(skill, index) in filteredSkills" :key="index" :class="lighMode?'shadow-gray-300':'shadow-gray-300/50'" class="h-40 rounded-lg shadow-lg hover:shadow-gray-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
+    <div :class="lighMode?'bg-gray-100':'bg-white/5'" class="h-2/3 rounded-t-lg flex items-center justify-center">
       <img :src="`https://skillicons.dev/icons?i=${skill.icon}`" />
     </div>
 
-    <div class="p-3 bg-white rounded-b-lg">
+    <div :class="lighMode?'bg-white':'bg-gray-600'" class="p-3 rounded-b-lg">
       <p class="text-sm">{{ skill.name }}</p>
       <p class="text-xs text-gray-400">{{ skill.type }}</p>
     </div>

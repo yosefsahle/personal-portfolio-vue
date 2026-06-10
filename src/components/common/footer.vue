@@ -8,7 +8,7 @@
             <a href="https://github.com/yosefsahle" target="_blank" class="w-10 h-10 md:w-6 md:h-6 bg-[#0DB760] items-center flex justify-center md:rounded-full"><i class="fa-brands fa-github text-white text-xl md:text-xs"></i></a>
             <a href="https://www.behance.net/yosefsahle" target="_blank" class="w-10 h-10 md:w-6 md:h-6 bg-[#0DB760] items-center flex justify-center md:rounded-full"><i class="fa-brands fa-behance text-white text-xl md:text-xs"></i></a>
             <a href="https://www.upwork.com/freelancers/yosefsahle" target="_blank" class="w-10 h-10 md:w-6 md:h-6 bg-[#0DB760] items-center flex justify-center md:rounded-full"><i class="fa-brands fa-upwork text-white text-xl md:text-xs"></i></a>
-            <a href="https://www.upwork.com/freelancers/yosefsahle" target="_blank" class="w-10 h-10 md:w-6 md:h-6 bg-[#0DB760] items-center flex justify-center md:rounded-full"><i class="fa-brands fa-instagram text-white text-xl md:text-xs"></i></a>
+            <a href="https://www.instagram.com/yosefsahle48?igsh=MXNmNzRuaTlhcHRrMw==" target="_blank" class="w-10 h-10 md:w-6 md:h-6 bg-[#0DB760] items-center flex justify-center md:rounded-full"><i class="fa-brands fa-instagram text-white text-xl md:text-xs"></i></a>
         </div>
     </div>
     </div>
