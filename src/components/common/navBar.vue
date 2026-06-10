@@ -50,7 +50,7 @@
           <a href="https://www.linkedin.com/in/yosef-sahle/" target="_blank" rel="noopener noreferrer">
             <i :class="lighMode ? 'text-gray-600 hover:text-[#0DB760]':'text-[#0DB760] hover:text-gray-600'" class="fa-brands fa-linkedin-in text-lg cursor-pointer hover:scale-120 transition-all duration-300"></i>
           </a>
-          <a href="https://github.com/yosefsahle" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/yosefsahle48?igsh=MXNmNzRuaTlhcHRrMw==" target="_blank" rel="noopener noreferrer">
             <i :class="lighMode ? 'text-gray-600 hover:text-[#0DB760]':'text-[#0DB760] hover:text-gray-600'" class="fa-brands fa-instagram text-lg cursor-pointer hover:scale-120 transition-all duration-300"></i>
           </a>
           
