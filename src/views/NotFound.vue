@@ -65,16 +65,25 @@
     </div>
 
     
-    <div class="h-100 flex flex-col justify-center gap-20 items-center">
-    <div class="flex justify-center gap-20 items-center">
-        <p class="text-9xl text-yellow-500/50 hover:text-[#0DB760]/20 font-bold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">4</p>
-        <p class="text-9xl text-[#0DB760]/20 hover:text-yellow-500/50 font-bold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">0</p>
-        <p class="text-9xl text-yellow-500/50 hover:text-[#0DB760]/20 font-bold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">4</p>
+    <div class="h-100 flex flex-col justify-center gap-20 items-center  ml-80">
+    <div class="flex justify-center gap-15 items-center">
+        <p class="text-9xl text-yellow-500/50 hover:text-[#0DB760]/20 font-extrabold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">W</p>
+        <p class="text-9xl text-[#0DB760]/20 hover:text-yellow-500/50 font-extrabold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">A</p>
+        <p class="text-9xl text-yellow-500/50 hover:text-[#0DB760]/20 font-extrabold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">T</p>
+        <p class="text-9xl text-[#0DB760]/20 hover:text-yellow-500/50 font-extrabold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">C</p>
+        <p class="text-9xl text-yellow-500/50 hover:text-[#0DB760]/20 font-extrabold scale-180 hover:scale-200 cursor-pointer transition-transform duration-300">H</p>
     </div>
-    <div class="flex justify-center gap-20 items-center">
-        <p class="text-3xl text-[#0DB760] font-bold scale-180  cursor-pointer transition-transform duration-300">Page Not Found</p>
+    <div class="flex justify-center gap-20 items-center tracking-[7px]">
+        <p class="text-3xl text-[#0DB760] font-thin scale-180  cursor-pointer transition-transform duration-300">With Scroll Vision here</p>
     </div>
     </div>
-
+    <div class="flex mt-30 gap-20 mb-10">
+      <div class="max-w-[30%]">
+      <p class="text-9xl font-extrabold">WEB</p>
+    </div>
+    <div class=" mockup-window border border-base-300 min-w-[70%]">
+      <div class="grid place-content-center border-t border-base-300 h-80 text-3xl font-bold">I build Across Platforms!</div>
+    </div>
     
+    </div>
 </template>
