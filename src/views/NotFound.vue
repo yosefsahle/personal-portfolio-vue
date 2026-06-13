@@ -1,30 +1,16 @@
 <template>
     <div class="mockup-phone scale-80 sm:scale-50 absolute top-110 sm:top-80 md:top-85 lg:top-75 left-50 -translate-x-1/2 -translate-y-1/2 z-10">
+  
   <div class="mockup-phone-camera"></div>
-  <div class="mockup-phone-display text-white grid place-content-center bg-neutral-900">
-    <div class="carousel carousel-vertical rounded-box">
-  <div class="carousel-item h-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" />
-  </div>
-  <div class="carousel-item h-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp" />
-  </div>
-  <div class="carousel-item h-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp" />
-  </div>
-  <div class="carousel-item h-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp" />
-  </div>
-  <div class="carousel-item h-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" />
-  </div>
-  <div class="carousel-item h-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp" />
-  </div>
-  <div class="carousel-item h-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp" />
-  </div>
-</div>
+  
+  <div class="mockup-phone-display bg-neutral-900 overflow-hidden w-[460px]">
+    
+    <iframe
+      src="https://personal-portfolio-vue-olive.vercel.app"
+      class="w-full h-full"
+      frameborder="0"
+    ></iframe>
+
   </div>
 </div>
     <div class="z-0 overflow-hidden absolute w-full md:w-5/6 h-full opacity-50">
@@ -78,12 +64,26 @@
     </div>
     </div>
     <div class="flex mt-30 gap-20 mb-10">
-      <div class="max-w-[30%]">
-      <p class="text-9xl font-extrabold">WEB</p>
+      <div class="max-w-[20%]">
+      <p class="text-[#0DB760] text-9xl font-extrabold">WEB</p>
     </div>
-    <div class=" mockup-window border border-base-300 min-w-[70%]">
-      <div class="grid place-content-center border-t border-base-300 h-80 text-3xl font-bold">I build Across Platforms!</div>
-    </div>
+    <div class="mockup-window border border-base-300 min-w-[80%]">
+  <div class="border-t border-base-300 h-80">
+    
+    <iframe
+      src="https://personal-portfolio-vue-olive.vercel.app/"
+      class="w-full h-full"
+      frameborder="0"
+      loading="lazy"
+    ></iframe>
+
+  </div>
+</div>
     
     </div>
 </template>
+<script setup>
+import { useTheme } from '../composables/useTheme';
+
+const { lighMode } = useTheme();
+</script>
