@@ -91,62 +91,62 @@
     </div>
     <div class="mt-5 mb-20 flex gap-5 flex-col">
     <details class="collapse border-base-300 border">
-      <summary class="collapse-title font-semibold">💻 Web Development</summary>
+      <summary :class="lighMode ? 'text-black':'text-gray-400'" class="collapse-title font-semibold">💻 Web Development</summary>
       <div class="collapse-content text-sm">
         <ul class="list rounded-box shadow-md">
-          <li class="list-row">Modern, responsive websites</li>
-          <li class="list-row">Built with React / Next.js / Tailwind</li>
-          <li class="list-row">SEO-friendly & fast performance</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Modern, responsive websites</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Built with React / Next.js / Tailwind</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">SEO-friendly & fast performance</li>
         </ul>
       </div>
     </details>
     <details class="collapse border-base-300 border">
-      <summary class="collapse-title font-semibold">📱 Mobile App Development</summary>
+      <summary :class="lighMode ? 'text-black':'text-gray-400'" class="collapse-title font-semibold">📱 Mobile App Development</summary>
       <div class="collapse-content text-sm">
         <ul class="list rounded-box shadow-md">
-          <li class="list-row">Android apps using Flutter / Kotlin</li>
-          <li class="list-row">Smooth UI + high performance</li>
-          <li class="list-row">API integration & real-time features</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Android apps using Flutter / Kotlin</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Smooth UI + high performance</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">API integration & real-time features</li>
         </ul>
       </div>
     </details>
     <details class="collapse border-base-300 border">
-      <summary class="collapse-title font-semibold">🧠 Full Stack Development</summary>
+      <summary :class="lighMode ? 'text-black':'text-gray-400'" class="collapse-title font-semibold">🧠 Full Stack Development</summary>
       <div class="collapse-content text-sm">
         <ul class="list rounded-box shadow-md">
-          <li class="list-row">Frontend + Backend complete solutions</li>
-          <li class="list-row">REST APIs (NestJS / Node.js / django)</li>
-          <li class="list-row">Database design (PostgreSQL, MongoDB)</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Frontend + Backend complete solutions</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">REST APIs (NestJS / Node.js / django)</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Database design (PostgreSQL, MongoDB)</li>
         </ul>
       </div>
     </details>
     <details class="collapse border-base-300 border">
-      <summary class="collapse-title font-semibold">🎨 UI/UX Design</summary>
+      <summary :class="lighMode ? 'text-black':'text-gray-400'" class="collapse-title font-semibold">🎨 UI/UX Design</summary>
       <div class="collapse-content text-sm">
         <ul class="list rounded-box shadow-md">
-          <li class="list-row">Clean, modern mobile & web designs</li>
-          <li class="list-row">Figma prototypes</li>
-          <li class="list-row">User-focused experience</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Clean, modern mobile & web designs</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Figma prototypes</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">User-focused experience</li>
         </ul>
       </div>
     </details>
     <details class="collapse border-base-300 border">
-      <summary class="collapse-title font-semibold">⚙️ Backend Development</summary>
+      <summary :class="lighMode ? 'text-black':'text-gray-400'" class="collapse-title font-semibold">⚙️ Backend Development</summary>
       <div class="collapse-content text-sm">
         <ul class="list rounded-box shadow-md">
-          <li class="list-row">Secure & scalable APIs</li>
-          <li class="list-row">Authentication (JWT, OTP, RBAC)</li>
-          <li class="list-row">Performance optimization</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Secure & scalable APIs</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Authentication (JWT, OTP, RBAC)</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Performance optimization</li>
         </ul>
       </div>
     </details>
     <details class="collapse border-base-300 border">
-      <summary class="collapse-title font-semibold">🛒 Custom Web Applications</summary>
+      <summary :class="lighMode ? 'text-black':'text-gray-400'" class="collapse-title font-semibold">🛒 Custom Web Applications</summary>
       <div class="collapse-content text-sm">
         <ul class="list rounded-box shadow-md">
-          <li class="list-row">Marketplaces, dashboards, admin panels</li>
-          <li class="list-row">Real-time systems</li>
-          <li class="list-row">Role-based systems (Admin/User/Seller)</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Marketplaces, dashboards, admin panels</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Real-time systems</li>
+          <li :class="lighMode ? 'text-black':'text-gray-400'" class="list-row">Role-based systems (Admin/User/Seller)</li>
         </ul>
       </div>
     </details>
