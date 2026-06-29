@@ -52,7 +52,7 @@
     <homeSkill />
     <homeProjects />
     <homeTools />
-    <testimonials />
+    <!-- <testimonials /> -->
     <homeFooter />  
 
     <div class="mt-15"></div>
