@@ -68,11 +68,21 @@ const scrollRight = () => {
             <img src="/projects/eliora.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
-            <img src="/projects/ekubers.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
-          </div>
-          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
             <img src="/projects/kulfinet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="/projects/bloomsopen.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="/projects/schoolsystem.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="/projects/chrimaharwosacademy.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+          </div>
+          <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
+            <img src="/projects/ekubers.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
+          </div>
+          
           <div class="min-w-[270px] h-60 rounded-lg overflow-hidden">
             <img src="/projects/searchet.jpg" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"/>
           </div>

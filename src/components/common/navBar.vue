@@ -10,9 +10,10 @@
     <div class="container mx-auto flex items-center justify-between">
 
       <!-- Logo -->
-      <p class="text-2xl font-bold text-[#0DB760] tracking-wide">
+      <!-- <p class="text-2xl font-bold text-[#0DB760] tracking-wide">
         Y.O.S.E.F
-      </p>
+      </p> -->
+      <img src="./../../assets/logotxt1.png" width="200px" />
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8">

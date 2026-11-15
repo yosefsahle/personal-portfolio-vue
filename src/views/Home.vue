@@ -19,6 +19,7 @@
              
                <img :src="imageSrc" alt="" class="md:w-100 md:h-100 float-1 mt-10 md:mt-0">
         </div>
+        <img src="./../assets/logo.png" alt="" class="absolute top-5 left-[-150px] opacity-[0.08] z-0 scale-[1.2]">
         <div class="flex flex-row md:flex-col justify-between items-center w-full md:w-0 md:h-80 animate-item delay-4">
             <p class="hidden md:block h-[120px] text-md font-thin text-[#0DB760] md:[writing-mode:vertical-rl] [text-orientation:mixed] ">Follow Me On</p>
             <div class="hidden md:block md:w-[1px] md:h-20 bg-[#0DB760]"></div>
